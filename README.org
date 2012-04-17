@@ -1,0 +1,26 @@
+* GeoViQua Feedback Model
+
+This repository track the evolution of the GeoViQua feedback model,
+also referred to as the consumer quality model.
+
+* Development
+
+The model itself is part of the GeoViQua EA models maintained by Joan Maso.
+Here in this repository we (Simon thum from Fraunhofer) tracks the feedback
+model as xmi, XSD schema, doucumentation and what else makes sense.
+
+There are two noteable branches:
+** raw branch
+Here, raw generated EA output is tracked.
+** cooked branch
+In cooked, all subsequent edits are tracked to get from EA output
+to a decent XSD. This increases the chance to keep current with the model
+by frequently rebasing against raw.
+** master branch
+Not noteable, just master. Likely cooked is more current.
+* Access
+Github provides convenient access to current state and individual
+changes to everyone via web, or you can clone the repository
+even without a github account.
+
+The Help pages of github explain everything in detail.
