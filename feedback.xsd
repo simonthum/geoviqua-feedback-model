@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft">
-	<xs:import namespace=""/>
+	<xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
 	<xs:import namespace=""/>
 	<xs:import namespace=""/>
 	<xs:import namespace=""/>
