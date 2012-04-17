@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft">
+	<xs:import namespace=""/>
+	<xs:import namespace=""/>
+	<xs:import namespace=""/>
+	<xs:import namespace=""/>
+	<xs:import namespace=""/>
+	<xs:import namespace=""/>
+	<xs:complexType name="GVQ_ExternalFeedback">
+		<xs:annotation>
+			<xs:documentation>External feedback is intended to associate information about the subject just to highlight its presence (without adding extra value?)
+
+This could be subclassed to draw in facebook likes or google +1's, community sites, blog posts, ...
+
+A point in question is the role of persistent URLs here, which should probably be preferred if not enforced.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence>
+					<xs:element name="resourceURL" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="mime" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>IETF RFC 2046 MIME Type
+
+Mime type the resource should answer in.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_FeedbackFocusType">
+		<xs:annotation>
+			<xs:documentation>The feedback focus is intended to qualify a "narrow" discussion context similar to a discussion thread. The "narrow" context is always within exactly one "hard" context/target.
+
+The focus may refer to some aspect that actually exists (a radio band, a sensor, a geolocation) prior to the feedback focus, or something purely subjective, like a title of a discussion thread. The user may create (some types of) feedback focuses.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="GVQ_FeedbackTarget" type="gvq_fb:GVQ_FeedbackTarget" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GVQ_FeedbackItem">
+		<xs:annotation>
+			<xs:documentation>The feedback item is the container of the actual feedback. Every item is set into context by a combination of foci, whose interpretation is subject to application guidelines. General intent is specified in the field.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This is an identifier for the feedback item. Main use case is a stable identifier for the feedback focus. Thus, it only needs to be locally unique.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="primaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The primary focus ("the", i.e. exactly one) specifies the context of the item, and (indirectly) points to the resource the feedback is about.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="secondaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>A secondary focus is a statement about the nature of the feedback item. For example, it may specify a certain domain of discourse in which the associated feedback is to be understood.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="supplementaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>A supplementary focus adds additional references, for example, another region in another data set with similar problems. It is used to formally model references that somehow are related to the feedback item at hand.
+
+In some cases, it may duplicate textual information given in a user comment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GVQ_FeedbackTarget">
+		<xs:annotation>
+			<xs:documentation>The Target unambiguously refers to pretext in the domain of discourse, such as a dataset or a sensor. This should match a datasetURI or MD_Identifier for that resource.
+
+The parent is intended to model containment such as "this sensor is contained in this SOS". This is redundant, but avoids having to understand e.g. SensorML to uncover the relationship. Obviously, the parent should not have finer granularity than the child.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="parent" type="gvq_fb:GVQ_FeedbackTarget" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="target" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This filed points to the target which is typically not inside the same system. Any considerations what exactly should go into this field are to be set in application guidelines, or subclasses of this.
+
+Actually, the feedback model does not depend on the target's type, it just postulates a canonicalized or otherwise "matchable" identifier in this field. This could take the form of an outside service to provide the necessary matching capability.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="natureOfTarget" type="MD_ScopeCode" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The natureOfTarget field gives information mainly about the nature and granularity of the referenced entity, e.g. service, individual sensor, dataset series. Therefore it uses MD_ScopeCode. It is possible that GeoViQua-specific extensions to the list of scope codes may be required - this should be assessed in the prototypes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GVQ_FeedbackTarget" type="gvq_fb:GVQ_FeedbackTarget" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GVQ_GeoLabel">
+		<xs:annotation>
+			<xs:documentation>Could be used to "attach" GeoLabel to existing datasets to make it discoverable without changing producer metadata.
+
+Technically, this could be a link to some web service which validates the asserted GeoLabel and displays an appropriate page or other output.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_MetadataOverride">
+		<xs:annotation>
+			<xs:documentation>Could be used for users to enhance metadata or highlight errors in provider metadata.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence>
+					<xs:element name="alternativeDataQualityEstimate" type="DQ_DataQuality" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_Rating">
+		<xs:annotation>
+			<xs:documentation>A rating is intended to cover star-like low information content ratings. Unlike e.g. a report, it is aggregable by nature.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence>
+					<xs:element name="ratingValue" type="xs:int" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>To be restricted between 1 and 5</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_UsageReport">
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence>
+					<xs:element name="usagePurpose" type="gvq_fb:GVQ_ReportAspectCode" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Citation" type="CI_Citation" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>Link to one or more publications which describe the use, if relevant</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="usageDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>For supplementary information on the exact procedure carried out</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="alternativeDatasets" type="MD_Identifier" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Use the 'uuid' attribute of the MD_Identifier to store a unique identifier for the referenced GEOSS resource</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="GVQ_ReportAspectCode">
+		<xs:restriction base="xs:String">
+			<xs:enumeration value="Useage"/>
+			<xs:enumeration value="Problem"/>
+			<xs:enumeration value="FitnessForPurpose"/>
+			<xs:enumeration value="Alternatives"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="GVQ_UserRoleCodeEnum">
+		<xs:restriction base="xs:String">
+			<xs:enumeration value="CommercialDataProducer"/>
+			<xs:enumeration value="ResearchEndUser"/>
+			<xs:enumeration value="NonResearchEndUser"/>
+			<xs:enumeration value="ScientificDataProducer"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="GVQ_UserInformation">
+		<xs:annotation>
+			<xs:documentation>This class is intended to link to the actual "implemented" user.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="user" type="CI_ResponsibleParty" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>In case the user is a CI_ResplnsibleParty this may be used to include details.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="applicationDomain" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The application domains a user considers himself to work in.
+
+Also see GVQ_DomainFocus</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="expertiseLevel" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This refers to this user's expertise level in this particular context, will be restricted between 1 and 5</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GVQ_ThematicFocus">
+		<xs:annotation>
+			<xs:documentation>The Theme is intended to act as a title when given, i.e. a less formal summary as is common on discussion boards.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackFocusType">
+				<xs:sequence>
+					<xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>ideally this should link to a list of codes</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_DatacentricFocus">
+		<xs:annotation>
+			<xs:documentation>A data centric focus describes sub-sets of a data set or data provided by a service. It is to be interpreted as the intersection of the attributes which are specified, i.e. an unspecified attribute does not constrain the focus.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackFocusType">
+				<xs:sequence>
+					<xs:element name="layer" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="extent" type="EX_SpatialTemporalExtent" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="band" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The band is intended as a local identifier for a band, intended for human understanding.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_FeedbackFocus">
+		<xs:annotation>
+			<xs:documentation>The FeedbackFocus specifies which other Feedback is the focus of the feedback given.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackFocusType">
+				<xs:sequence>
+					<xs:element name="item" type="gvq_fb:GVQ_FeedbackItem" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="GVQ_FeedbackItem" type="gvq_fb:GVQ_FeedbackItem" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_UserComment">
+		<xs:annotation>
+			<xs:documentation>The comment is the most generic feedback type. Depending on the foci, it may serve as answer, rating justification, or general comment.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackItem">
+				<xs:sequence>
+					<xs:element name="comment" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The user comment's body.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="mime-type" type="xs:string" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>IETF RFC 2046 MIME Type
+
+The mime is used to infer additional processing which may be required for proper display of the comment in  an environment. For example, text/x-web-markdown may need conversion, text/plain or text/html just need sanitizing in a web application.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_FeedbackGroup">
+		<xs:annotation>
+			<xs:documentation>The feedback group is a collection of coherent feedback from one (or possible more) user(s). It is used to group e.g. an intercomparison report with the rating(s) derived from it.
+
+Every feedback  item is contained in exactly one feedback group. In other words, feedback is always given in the context of a feedback group.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="timestamp" type="CI_Date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="user" type="gvq_fb:GVQ_UserInformation" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="roles" type="gvq_fb:GVQ_UserRoleCodeEnum" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The role of the user with regard to this specific feedback group: this allows producers to add more information after release of the initial metadata.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GVQ_FeedbackItem" type="gvq_fb:GVQ_FeedbackItem" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="GVQ_UserInformation" type="gvq_fb:GVQ_UserInformation" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GVQ_DomainFocus">
+		<xs:annotation>
+			<xs:documentation>We identify EO domains using selected ontologies such as GEMET concepts. The DomainFocus, unlike the TagFocus, uses domain URNs defined in some ontology.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackFocusType">
+				<xs:sequence>
+					<xs:element name="applicationDomainURN" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GVQ_TagFocus">
+		<xs:annotation>
+			<xs:documentation>Tags are intended as an informal qualification to be applied by the user if he decides that the more formal possibilities (like domain or theme) are somehow inadequate.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gvq_fb:GVQ_FeedbackFocusType">
+				<xs:sequence>
+					<xs:element name="tags" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
