@@ -159,7 +159,7 @@ Technically, this could be a link to some web service which validates the assert
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:simpleType name="GVQ_ReportAspectCode">
-		<xs:restriction base="xs:String">
+		<xs:restriction base="xs:string">
 			<xs:enumeration value="Useage"/>
 			<xs:enumeration value="Problem"/>
 			<xs:enumeration value="FitnessForPurpose"/>
@@ -167,7 +167,7 @@ Technically, this could be a link to some web service which validates the assert
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GVQ_UserRoleCodeEnum">
-		<xs:restriction base="xs:String">
+		<xs:restriction base="xs:string">
 			<xs:enumeration value="CommercialDataProducer"/>
 			<xs:enumeration value="ResearchEndUser"/>
 			<xs:enumeration value="NonResearchEndUser"/>
