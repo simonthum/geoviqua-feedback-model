@@ -16,6 +16,11 @@ Here, raw generated EA output is tracked.
 In cooked, all subsequent edits are tracked to get from EA output
 to a decent XSD. This increases the chance to keep current with the model
 by frequently rebasing against raw.
+
+This means it will be a pain (in the PITA sense) to follow this branch.
+Use master instead, which is intended to be updated forward-only,
+on major changes only.
+
 ** master branch
 Not noteable, just master. Likely cooked is more current.
 * Access
@@ -24,3 +29,4 @@ changes to everyone via web, or you can clone the repository
 even without a github account.
 
 The Help pages of github explain everything in detail.
+
