@@ -80,7 +80,7 @@ The parent is intended to model containment such as "this sensor is contained in
 Actually, the feedback model does not depend on the target's type, it just postulates a canonicalized or otherwise "matchable" identifier in this field. This could take the form of an outside service to provide the necessary matching capability.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element ref="MD_ScopeCode" minOccurs="1" maxOccurs="1">
+			<xs:element ref="md:MD_ScopeCode" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The natureOfTarget field gives information mainly about the nature and granularity of the referenced entity, e.g. service, individual sensor, dataset series. Therefore it uses MD_ScopeCode. It is possible that GeoViQua-specific extensions to the list of scope codes may be required - this should be assessed in the prototypes.</xs:documentation>
 				</xs:annotation>
@@ -107,7 +107,7 @@ Technically, this could be a link to some web service which validates the assert
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackItem">
 				<xs:sequence>
-					<xs:element name="alternativeDataQualityEstimate" type="DQ_DataQuality" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="alternativeDataQualityEstimate" type="md:DQ_DataQuality_Type" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -133,7 +133,7 @@ Technically, this could be a link to some web service which validates the assert
 			<xs:extension base="GVQ_FeedbackItem">
 				<xs:sequence>
 					<xs:element name="usagePurpose" type="GVQ_ReportAspectCode" minOccurs="0" maxOccurs="unbounded"/>
-					<xs:element name="Citation" type="CI_Citation" minOccurs="0" maxOccurs="1">
+					<xs:element name="Citation" type="md:CI_Citation_Type" minOccurs="0" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation>Link to one or more publications which describe the use, if relevant</xs:documentation>
 						</xs:annotation>
@@ -143,7 +143,7 @@ Technically, this could be a link to some web service which validates the assert
 							<xs:documentation>For supplementary information on the exact procedure carried out.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element ref="MD_Identifier" minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="md:MD_Identifier" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Use the 'uuid' attribute of the MD_Identifier to store a unique identifier for the referenced GEOSS resource</xs:documentation>
 						</xs:annotation>
@@ -173,7 +173,7 @@ Technically, this could be a link to some web service which validates the assert
 			<xs:documentation>This class is intended to link to the actual "implemented" user.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="user" type="CI_ResponsibleParty" minOccurs="0" maxOccurs="1">
+			<xs:element name="user" type="md:CI_ResponsibleParty_Type" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>In case the user is a CI_ResplnsibleParty this may be used to include details.</xs:documentation>
 				</xs:annotation>
@@ -216,7 +216,7 @@ Also see GVQ_DomainFocus</xs:documentation>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
 					<xs:element name="layer" type="xs:string" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="extent" type="EX_SpatialTemporalExtent" minOccurs="1" maxOccurs="1"/>
+					<xs:element ref="md:EX_SpatialTemporalExtent" minOccurs="0" maxOccurs="1"/>
 					<xs:element name="band" type="xs:string" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation>The band is intended as a local identifier for a band, intended for human understanding.</xs:documentation>
@@ -269,7 +269,7 @@ The mime is used to infer additional processing which may be required for proper
 Every feedback  item is contained in exactly one feedback group. In other words, feedback is always given in the context of a feedback group.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="timestamp" type="CI_Date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="timestamp" type="md:CI_Date_Type" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="user" type="GVQ_UserInformation" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="roles" type="GVQ_UserRoleCodeEnum" minOccurs="1" maxOccurs="unbounded">
 				<xs:annotation>
