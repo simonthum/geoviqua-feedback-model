@@ -86,7 +86,7 @@ The parent is intended to model containment such as "this sensor is contained in
 Actually, the feedback model does not depend on the target's type, it just postulates a canonicalized or otherwise "matchable" identifier in this field. This could take the form of an outside service to provide the necessary matching capability.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="natureOfTarget" type="MD_ScopeCode" minOccurs="1" maxOccurs="1">
+			<xs:element ref="MD_ScopeCode" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The natureOfTarget field gives information mainly about the nature and granularity of the referenced entity, e.g. service, individual sensor, dataset series. Therefore it uses MD_ScopeCode. It is possible that GeoViQua-specific extensions to the list of scope codes may be required - this should be assessed in the prototypes.</xs:documentation>
 				</xs:annotation>
@@ -149,7 +149,7 @@ Technically, this could be a link to some web service which validates the assert
 							<xs:documentation>For supplementary information on the exact procedure carried out</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="alternativeDatasets" type="MD_Identifier" minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="MD_Identifier" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Use the 'uuid' attribute of the MD_Identifier to store a unique identifier for the referenced GEOSS resource</xs:documentation>
 						</xs:annotation>
