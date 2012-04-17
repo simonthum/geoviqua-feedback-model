@@ -54,21 +54,18 @@ The focus may refer to some aspect that actually exists (a radio band, a sensor,
 					<xs:documentation>The primary focus ("the", i.e. exactly one) specifies the context of the item, and (indirectly) points to the resource the feedback is about.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="secondaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1">
+			<xs:element name="secondaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>A secondary focus is a statement about the nature of the feedback item. For example, it may specify a certain domain of discourse in which the associated feedback is to be understood.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="supplementaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1">
+			<xs:element name="supplementaryFocus" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>A supplementary focus adds additional references, for example, another region in another data set with similar problems. It is used to formally model references that somehow are related to the feedback item at hand.
 
 In some cases, it may duplicate textual information given in a user comment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="GVQ_FeedbackFocusType" type="gvq_fb:GVQ_FeedbackFocusType" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GVQ_FeedbackTarget">
