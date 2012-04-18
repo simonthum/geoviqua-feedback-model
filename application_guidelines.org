@@ -1,0 +1,28 @@
+* Intro
+** Purpose
+   The application guidelines specify how we apply the feedback model within GeoViQua.
+   It will become latex when is is fleshed out some more.
+** Boundary
+   The feedback model is generally intended for user feedback, and producer feedback that is
+   changing more rapidly than official metadata for whch more quality cotrol is implied.
+** Model Elements
+   repeat elements here
+* Use cases
+** A rating
+** A rating based on a part of the data
+** Justification for a rating
+** Add report in which the data set is intercompared
+** Add a domain-specifc comment to a data set
+** Search for comments pertaining to a domain.
+* Constraints
+  This section discusses constraints that make sense within GeoViQua, but are not
+  enforced at the conceptual model or XSD level.
+** MAYBE FB Group may not span datasets
+   I.e. the priomary focus of all items may only point to one dataset per group.
+** Not more than one comment in a group?
+* Diverse Issues
+** Identifiers - uniqueness and canonicalization
+** Default value recommendations
+*** First user domain, if existent, may be default in new feedback UI
+** Application domain ontology
+* Summary
