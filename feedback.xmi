@@ -58,6 +58,8 @@
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_2C4BDDC5_0800_44fc_BACB_3CFBAB33B2CA" general="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst6C960A_48A3_43fb_95F6_0FF1AE4D7CD0" visibility="public" association="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015__48A3_43fb_95F6_0FF1AE4D7CD0" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000016__48A3_43fb_95F6_0FF1AE4D7CD0" value="1"/>
 				</ownedAttribute>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Association" xmi:id="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" visibility="public">
@@ -65,147 +67,133 @@
 				<memberEnd xmi:idref="EAID_src6C960A_48A3_43fb_95F6_0FF1AE4D7CD0"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src6C960A_48A3_43fb_95F6_0FF1AE4D7CD0" visibility="public" association="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_A7A5D1EF_6DA5_4e2b_9A8B_9F2E94A14680"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000039__48A3_43fb_95F6_0FF1AE4D7CD0" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000040__48A3_43fb_95F6_0FF1AE4D7CD0" value="1"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" name="GVQ_FeedbackFocusType" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstCBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" visibility="public" association="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstDE8FA4_0A16_4041_A915_96BB8B7CBBB3" visibility="public" association="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstB7A018_66CE_4b6a_A280_058FAA4161F8" visibility="public" association="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-				</ownedAttribute>
-			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" visibility="public">
-				<memberEnd xmi:idref="EAID_dstCBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28"/>
-				<memberEnd xmi:idref="EAID_srcCBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcCBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" visibility="public" association="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000037__DBC2_45e9_B8F4_2EA0FEAFEC28" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000038__DBC2_45e9_B8F4_2EA0FEAFEC28" value="1"/>
-				</ownedEnd>
-			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" name="GVQ_FeedbackFocusType" visibility="public"/>
 			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5BDFDAF4_4752_4462_A7B6_20179C2BC286" visibility="public">
 				<memberEnd xmi:idref="EAID_dstDFDAF4_4752_4462_A7B6_20179C2BC286"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_dstDFDAF4_4752_4462_A7B6_20179C2BC286" visibility="public" association="EAID_5BDFDAF4_4752_4462_A7B6_20179C2BC286" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015__4752_4462_A7B6_20179C2BC286" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000016__4752_4462_A7B6_20179C2BC286" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017__4752_4462_A7B6_20179C2BC286" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018__4752_4462_A7B6_20179C2BC286" value="1"/>
 				</ownedEnd>
 				<memberEnd xmi:idref="EAID_srcDFDAF4_4752_4462_A7B6_20179C2BC286"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcDFDAF4_4752_4462_A7B6_20179C2BC286" visibility="public" association="EAID_5BDFDAF4_4752_4462_A7B6_20179C2BC286" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000051__4752_4462_A7B6_20179C2BC286" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000052__4752_4462_A7B6_20179C2BC286" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000049__4752_4462_A7B6_20179C2BC286" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000050__4752_4462_A7B6_20179C2BC286" value="-1"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" visibility="public">
-				<memberEnd xmi:idref="EAID_dstDE8FA4_0A16_4041_A915_96BB8B7CBBB3"/>
-				<memberEnd xmi:idref="EAID_srcDE8FA4_0A16_4041_A915_96BB8B7CBBB3"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcDE8FA4_0A16_4041_A915_96BB8B7CBBB3" visibility="public" association="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000039__0A16_4041_A915_96BB8B7CBBB3" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000040__0A16_4041_A915_96BB8B7CBBB3" value="-1"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" visibility="public">
+				<memberEnd xmi:idref="EAID_dst675F93_5D9A_43a7_BB09_59224BCEF6B4"/>
+				<memberEnd xmi:idref="EAID_src675F93_5D9A_43a7_BB09_59224BCEF6B4"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src675F93_5D9A_43a7_BB09_59224BCEF6B4" visibility="public" association="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" visibility="public">
-				<memberEnd xmi:idref="EAID_dstB7A018_66CE_4b6a_A280_058FAA4161F8"/>
-				<memberEnd xmi:idref="EAID_srcB7A018_66CE_4b6a_A280_058FAA4161F8"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcB7A018_66CE_4b6a_A280_058FAA4161F8" visibility="public" association="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000041__66CE_4b6a_A280_058FAA4161F8" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000042__66CE_4b6a_A280_058FAA4161F8" value="-1"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" visibility="public">
+				<memberEnd xmi:idref="EAID_dst90DDD8_D47A_4c7f_8551_BA097064B16B"/>
+				<memberEnd xmi:idref="EAID_src90DDD8_D47A_4c7f_8551_BA097064B16B"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src90DDD8_D47A_4c7f_8551_BA097064B16B" visibility="public" association="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" visibility="public">
+				<memberEnd xmi:idref="EAID_dst782FA2_558B_4a04_8707_A40C26394CED"/>
+				<memberEnd xmi:idref="EAID_src782FA2_558B_4a04_8707_A40C26394CED"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src782FA2_558B_4a04_8707_A40C26394CED" visibility="public" association="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 				</ownedEnd>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" name="GVQ_FeedbackGroup" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_8A4D7C08_548C_4415_B260_0AC11D38D12B" name="timestamp" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_4366A91D_FC21_4b08_9909_D492F5950643"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017_548C_4415_B260_0AC11D38D12B" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018_548C_4415_B260_0AC11D38D12B" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_548C_4415_B260_0AC11D38D12B" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000020_548C_4415_B260_0AC11D38D12B" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_E067E514_1C5A_4bac_8242_3298C38CFC47" name="user" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_0ADEC692_5DCC_4db0_BADE_C6CDADECC9CF"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_1C5A_4bac_8242_3298C38CFC47" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000020_1C5A_4bac_8242_3298C38CFC47" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_1C5A_4bac_8242_3298C38CFC47" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000022_1C5A_4bac_8242_3298C38CFC47" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_87E6CF5F_BE40_49ed_8E35_9E2A023E7B72" name="roles" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_254631C3_17F3_494b_BE0D_AF9F759A7285"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_BE40_49ed_8E35_9E2A023E7B72" value="1"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000022_BE40_49ed_8E35_9E2A023E7B72" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023_BE40_49ed_8E35_9E2A023E7B72" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000024_BE40_49ed_8E35_9E2A023E7B72" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstB7D37B_54DF_412c_B07E_7847F8E10A65" name="items" visibility="public" association="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000027__54DF_412c_B07E_7847F8E10A65" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000028__54DF_412c_B07E_7847F8E10A65" value="-1"/>
 				</ownedAttribute>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Association" xmi:id="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47" visibility="public">
 				<memberEnd xmi:idref="EAID_dst568D8C_8532_4b48_BA53_4CADEA12CF47"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_dst568D8C_8532_4b48_BA53_4CADEA12CF47" visibility="public" association="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_0ADEC692_5DCC_4db0_BADE_C6CDADECC9CF"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023__8532_4b48_BA53_4CADEA12CF47" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000024__8532_4b48_BA53_4CADEA12CF47" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000025__8532_4b48_BA53_4CADEA12CF47" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000026__8532_4b48_BA53_4CADEA12CF47" value="1"/>
 				</ownedEnd>
 				<memberEnd xmi:idref="EAID_src568D8C_8532_4b48_BA53_4CADEA12CF47"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src568D8C_8532_4b48_BA53_4CADEA12CF47" visibility="public" association="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000081__8532_4b48_BA53_4CADEA12CF47" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000082__8532_4b48_BA53_4CADEA12CF47" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000079__8532_4b48_BA53_4CADEA12CF47" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000080__8532_4b48_BA53_4CADEA12CF47" value="-1"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" visibility="public">
-				<memberEnd xmi:idref="EAID_dstFB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB"/>
-				<memberEnd xmi:idref="EAID_srcFB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcFB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" visibility="public" association="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000025__DF2E_4c1d_A5D3_ACD1934A5EBB" value="1"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000026__DF2E_4c1d_A5D3_ACD1934A5EBB" value="-1"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" visibility="public">
+				<memberEnd xmi:idref="EAID_dstB7D37B_54DF_412c_B07E_7847F8E10A65"/>
+				<memberEnd xmi:idref="EAID_srcB7D37B_54DF_412c_B07E_7847F8E10A65"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcB7D37B_54DF_412c_B07E_7847F8E10A65" visibility="public" association="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000037__54DF_412c_B07E_7847F8E10A65" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000038__54DF_412c_B07E_7847F8E10A65" value="1"/>
 				</ownedEnd>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" name="GVQ_FeedbackItem" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_EC026561_AC4B_4128_A44E_B90A579189B4" name="identifier" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000027_AC4B_4128_A44E_B90A579189B4" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000028_AC4B_4128_A44E_B90A579189B4" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000029_AC4B_4128_A44E_B90A579189B4" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000030_AC4B_4128_A44E_B90A579189B4" value="1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A249EE50_279B_4feb_8548_3BA102AD308F" name="primaryFocus" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst675F93_5D9A_43a7_BB09_59224BCEF6B4" name="primaryFocus" visibility="public" association="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000029_279B_4feb_8548_3BA102AD308F" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000030_279B_4feb_8548_3BA102AD308F" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000031__5D9A_43a7_BB09_59224BCEF6B4" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000032__5D9A_43a7_BB09_59224BCEF6B4" value="1"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_AE967922_AE05_42cc_AA15_1EF7636C3768" name="secondaryFocus" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst90DDD8_D47A_4c7f_8551_BA097064B16B" name="supplementaryFoci" visibility="public" association="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000031_AE05_42cc_AA15_1EF7636C3768" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000032_AE05_42cc_AA15_1EF7636C3768" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000033__D47A_4c7f_8551_BA097064B16B" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000034__D47A_4c7f_8551_BA097064B16B" value="-1"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FBA1ABA1_8250_4105_924B_2B685EA0085C" name="supplementaryFocus" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst782FA2_558B_4a04_8707_A40C26394CED" name="secondaryFoci" visibility="public" association="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000033_8250_4105_924B_2B685EA0085C" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000034_8250_4105_924B_2B685EA0085C" value="1"/>
-				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstFB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" visibility="public" association="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000035__DF2E_4c1d_A5D3_ACD1934A5EBB" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000036__DF2E_4c1d_A5D3_ACD1934A5EBB" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000035__558B_4a04_8707_A40C26394CED" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000036__558B_4a04_8707_A40C26394CED" value="-1"/>
 				</ownedAttribute>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3" name="GVQ_FeedbackTarget" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FCE6E073_F348_4113_8767_BD9E5E272E6A" name="parent" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000043_F348_4113_8767_BD9E5E272E6A" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000044_F348_4113_8767_BD9E5E272E6A" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000041_F348_4113_8767_BD9E5E272E6A" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000042_F348_4113_8767_BD9E5E272E6A" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_9EEA53D3_B4C0_4ff2_B819_F6FBE8E6E350" name="target" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000045_B4C0_4ff2_B819_F6FBE8E6E350" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000046_B4C0_4ff2_B819_F6FBE8E6E350" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000043_B4C0_4ff2_B819_F6FBE8E6E350" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000044_B4C0_4ff2_B819_F6FBE8E6E350" value="1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_15EBA142_7D48_4d61_B991_706472CE3220" name="natureOfTarget" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_20BAFE02_1081_43ec_965A_04AE71439B54"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000047_7D48_4d61_B991_706472CE3220" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000048_7D48_4d61_B991_706472CE3220" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000045_7D48_4d61_B991_706472CE3220" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000046_7D48_4d61_B991_706472CE3220" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst3A77A9_CB07_4c84_8440_5C08567297A5" visibility="public" association="EAID_813A77A9_CB07_4c84_8440_5C08567297A5" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000049__CB07_4c84_8440_5C08567297A5" value="0"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000050__CB07_4c84_8440_5C08567297A5" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000047__CB07_4c84_8440_5C08567297A5" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000048__CB07_4c84_8440_5C08567297A5" value="1"/>
 				</ownedAttribute>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Association" xmi:id="EAID_813A77A9_CB07_4c84_8440_5C08567297A5" visibility="public">
@@ -213,8 +201,8 @@
 				<memberEnd xmi:idref="EAID_src3A77A9_CB07_4c84_8440_5C08567297A5"/>
 				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src3A77A9_CB07_4c84_8440_5C08567297A5" visibility="public" association="EAID_813A77A9_CB07_4c84_8440_5C08567297A5" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 					<type xmi:idref="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000053__CB07_4c84_8440_5C08567297A5" value="0"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000054__CB07_4c84_8440_5C08567297A5" value="0"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000051__CB07_4c84_8440_5C08567297A5" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000052__CB07_4c84_8440_5C08567297A5" value="0"/>
 				</ownedEnd>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_DD7CBC44_B110_4fe0_A849_E777BE82A7CD" name="GVQ_GeoLabel" visibility="public">
@@ -223,45 +211,45 @@
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_0EE537A1_AF88_4afa_94A4_5B788F336114" name="GVQ_MetadataOverride" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_29E1F7A7_CD9E_4436_A75F_56830A74305B" name="alternativeDataQualityEstimate" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_93056CE4_E9B2_496e_A7DF_5F530F0666BC"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000055_CD9E_4436_A75F_56830A74305B" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000056_CD9E_4436_A75F_56830A74305B" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000053_CD9E_4436_A75F_56830A74305B" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000054_CD9E_4436_A75F_56830A74305B" value="1"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_AA6DC796_DF20_4f08_AC6B_F6712A932128" general="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_1DEC05B4_2403_45a1_82CA_79AF5E5DEB66" name="GVQ_Rating" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_25DA870D_9417_4a5a_B145_294E356FB223" name="ratingValue" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000057_9417_4a5a_B145_294E356FB223" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000058_9417_4a5a_B145_294E356FB223" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000055_9417_4a5a_B145_294E356FB223" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000056_9417_4a5a_B145_294E356FB223" value="1"/>
 					<type xmi:idref="EAJava_int"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_0FE5F778_89CA_429c_953E_8278A853A4BD" general="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Enumeration" xmi:id="EAID_8DD1F654_B1CC_4c85_AEA8_1D263242DFF5" name="GVQ_ReportAspectCode" visibility="public">
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_29426FCA_A392_46e1_BE39_2D966152AFD0" name="Useage" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000059_A392_46e1_BE39_2D966152AFD0" value="Useage"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000057_A392_46e1_BE39_2D966152AFD0" value="Useage"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_9C580B03_01D4_4219_9CE0_01F4CF290EDB" name="Problem" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000059_01D4_4219_9CE0_01F4CF290EDB" value="Problem"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000057_01D4_4219_9CE0_01F4CF290EDB" value="Problem"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_E04FF9C4_6A97_4959_B1E4_68C2973C84B4" name="FitnessForPurpose" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000059_6A97_4959_B1E4_68C2973C84B4" value="Fitness for Purpose"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000057_6A97_4959_B1E4_68C2973C84B4" value="Fitness for Purpose"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_B069A895_C52E_4c46_8DDA_A71682372DF4" name="Alternatives" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000059_C52E_4c46_8DDA_A71682372DF4" value="Alternatives"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000057_C52E_4c46_8DDA_A71682372DF4" value="Alternatives"/>
 				</ownedLiteral>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_5DFBA539_26C5_4a63_9BB9_ABB286245338" name="GVQ_TagFocus" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_04F3DBF1_A1BE_4bf8_BDB9_DF7F9BA0EA8D" name="tags" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000059_A1BE_4bf8_BDB9_DF7F9BA0EA8D" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000060_A1BE_4bf8_BDB9_DF7F9BA0EA8D" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000057_A1BE_4bf8_BDB9_DF7F9BA0EA8D" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000058_A1BE_4bf8_BDB9_DF7F9BA0EA8D" value="-1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_365C2379_13CE_4895_84B6_C20DD8A1D7C1" general="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_D4EAC4FB_0561_47ae_82B6_1FA68AF4429D" name="GVQ_ThematicFocus" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_F8BF0845_6F7F_404f_B705_C6DF5D2D22F9" name="title" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000061_6F7F_404f_B705_C6DF5D2D22F9" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000062_6F7F_404f_B705_C6DF5D2D22F9" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000059_6F7F_404f_B705_C6DF5D2D22F9" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000060_6F7F_404f_B705_C6DF5D2D22F9" value="1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_4B084783_DFA8_4cca_9D92_3DEA7E1F4F05" general="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
@@ -269,36 +257,36 @@
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_3C7773EB_BBCF_4f17_8D0E_3220BF61CF10" name="GVQ_UsageReport" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_3308DD63_0AA4_47ad_943C_D688870210BC" name="usagePurpose" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_8DD1F654_B1CC_4c85_AEA8_1D263242DFF5"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000063_0AA4_47ad_943C_D688870210BC" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000064_0AA4_47ad_943C_D688870210BC" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000061_0AA4_47ad_943C_D688870210BC" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000062_0AA4_47ad_943C_D688870210BC" value="-1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_20C3C4E4_DEA3_4f3d_BABC_1C353A457A1F" name="Citation" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_B7F873A2_9778_4e9d_8E9E_E0F39E18B58E"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000065_DEA3_4f3d_BABC_1C353A457A1F" value="0"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000066_DEA3_4f3d_BABC_1C353A457A1F" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000063_DEA3_4f3d_BABC_1C353A457A1F" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000064_DEA3_4f3d_BABC_1C353A457A1F" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_5F6E151B_2A3F_4406_9FBB_018697CD181D" name="usageDescription" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000067_2A3F_4406_9FBB_018697CD181D" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000068_2A3F_4406_9FBB_018697CD181D" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000065_2A3F_4406_9FBB_018697CD181D" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000066_2A3F_4406_9FBB_018697CD181D" value="1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_8AF6D42F_5F3F_4701_9ACB_15C90DFC8DE9" name="alternativeDatasets" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_DAA65886_9A62_4b8f_8625_B3AF304B06C7"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000069_5F3F_4701_9ACB_15C90DFC8DE9" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000070_5F3F_4701_9ACB_15C90DFC8DE9" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000067_5F3F_4701_9ACB_15C90DFC8DE9" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000068_5F3F_4701_9ACB_15C90DFC8DE9" value="-1"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_C1A654C3_CD3F_469e_A01B_15C480B9409A" general="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_40D6B57F_4420_43bc_927E_2C2EBC9810C9" name="GVQ_UserComment" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_6A406391_7033_4ce3_8873_02619DE03BAA" name="comment" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000071_7033_4ce3_8873_02619DE03BAA" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000072_7033_4ce3_8873_02619DE03BAA" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000069_7033_4ce3_8873_02619DE03BAA" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000070_7033_4ce3_8873_02619DE03BAA" value="1"/>
 					<type xmi:idref="EAJava_String"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_32712AEC_3BF0_4d6f_AE02_4BC626AA6A9E" name="mime-type" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000073_3BF0_4d6f_AE02_4BC626AA6A9E" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000074_3BF0_4d6f_AE02_4BC626AA6A9E" value="1"/>
-					<defaultValue xmi:type="uml:LiteralString" xmi:id="EAID_LI000075_3BF0_4d6f_AE02_4BC626AA6A9E" value="text/plain"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000071_3BF0_4d6f_AE02_4BC626AA6A9E" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000072_3BF0_4d6f_AE02_4BC626AA6A9E" value="1"/>
+					<defaultValue xmi:type="uml:LiteralString" xmi:id="EAID_LI000073_3BF0_4d6f_AE02_4BC626AA6A9E" value="text/plain"/>
 					<type xmi:idref="EAJava_String"/>
 				</ownedAttribute>
 				<generalization xmi:type="uml:Generalization" xmi:id="EAID_F87ECC54_8059_4214_97EB_75583943DDE5" general="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
@@ -306,49 +294,55 @@
 			<packagedElement xmi:type="uml:Class" xmi:id="EAID_0ADEC692_5DCC_4db0_BADE_C6CDADECC9CF" name="GVQ_UserInformation" visibility="public">
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_010D4711_8397_45a3_87C5_5D2395B1FE7A" name="user" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 					<type xmi:idref="EAID_1F036D3F_D633_4c57_9765_CEBF79B3359B"/>
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000075_8397_45a3_87C5_5D2395B1FE7A" value="0"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000076_8397_45a3_87C5_5D2395B1FE7A" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000073_8397_45a3_87C5_5D2395B1FE7A" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000074_8397_45a3_87C5_5D2395B1FE7A" value="1"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_438D73EC_F045_4816_80A1_A4204E7D73A3" name="applicationDomain" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="true" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000077_F045_4816_80A1_A4204E7D73A3" value="0"/>
-					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000078_F045_4816_80A1_A4204E7D73A3" value="-1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000075_F045_4816_80A1_A4204E7D73A3" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000076_F045_4816_80A1_A4204E7D73A3" value="-1"/>
 					<type xmi:idref="EAJava_string"/>
 				</ownedAttribute>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_4F465F02_F5CA_4c73_BBFC_DA1362300D71" name="expertiseLevel" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
-					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000079_F5CA_4c73_BBFC_DA1362300D71" value="1"/>
-					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000080_F5CA_4c73_BBFC_DA1362300D71" value="1"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000077_F5CA_4c73_BBFC_DA1362300D71" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000078_F5CA_4c73_BBFC_DA1362300D71" value="1"/>
 					<type xmi:idref="EAJava_int"/>
 				</ownedAttribute>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Enumeration" xmi:id="EAID_254631C3_17F3_494b_BE0D_AF9F759A7285" name="GVQ_UserRoleCodeEnum" visibility="public">
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_52DD423F_6C6C_4d8f_9B8C_029CC2D3BC83" name="CommercialDataProducer" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000083_6C6C_4d8f_9B8C_029CC2D3BC83" value="Commercial Data Producer"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000081_6C6C_4d8f_9B8C_029CC2D3BC83" value="Commercial Data Producer"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_9DD107ED_15AD_4b50_8413_FF59B2911F18" name="ResearchEndUser" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000083_15AD_4b50_8413_FF59B2911F18" value="Research End-User"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000081_15AD_4b50_8413_FF59B2911F18" value="Research End-User"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_B15CDFA0_039A_4933_943C_5F1162E18077" name="NonResearchEndUser" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000083_039A_4933_943C_5F1162E18077" value="Non-research End-User"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000081_039A_4933_943C_5F1162E18077" value="Non-research End-User"/>
 				</ownedLiteral>
 				<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_9B3A5B1D_7B2C_471c_8F66_FE3800B03E45" name="ScientificDataProducer" visibility="public" classifier="EAJava_string">
-					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000083_7B2C_471c_8F66_FE3800B03E45" value="Scientific Data Producer"/>
+					<specification xmi:type="uml:LiteralString" xmi:id="EAID_LI000081_7B2C_471c_8F66_FE3800B03E45" value="Scientific Data Producer"/>
 				</ownedLiteral>
 			</packagedElement>
 		</packagedElement>
 		<EPProfile:abstract base_Class="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 		<EPProfile:abstract base_Class="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 		<SoaML:id base_Attribute="EAID_EC026561_AC4B_4128_A44E_B90A579189B4"/>
+		<thecustomprofile:anonymousRole base_Attribute="EAID_15EBA142_7D48_4d61_B991_706472CE3220" anonymousRole="true"/>
+		<thecustomprofile:XSDelement base_Attribute="EAID_15EBA142_7D48_4d61_B991_706472CE3220"/>
 		<EAUML:enumeration base_Class="EAID_8DD1F654_B1CC_4c85_AEA8_1D263242DFF5"/>
 		<thecustomprofile:enum base_Attribute="EAID_29426FCA_A392_46e1_BE39_2D966152AFD0"/>
 		<thecustomprofile:enum base_Attribute="EAID_9C580B03_01D4_4219_9CE0_01F4CF290EDB"/>
 		<thecustomprofile:enum base_Attribute="EAID_E04FF9C4_6A97_4959_B1E4_68C2973C84B4"/>
 		<thecustomprofile:enum base_Attribute="EAID_B069A895_C52E_4c46_8DDA_A71682372DF4"/>
+		<thecustomprofile:anonymousRole base_Attribute="EAID_8AF6D42F_5F3F_4701_9ACB_15C90DFC8DE9" anonymousRole="true"/>
+		<thecustomprofile:XSDelement base_Attribute="EAID_8AF6D42F_5F3F_4701_9ACB_15C90DFC8DE9"/>
 		<EAUML:enumeration base_Class="EAID_254631C3_17F3_494b_BE0D_AF9F759A7285"/>
 		<thecustomprofile:enum base_Attribute="EAID_52DD423F_6C6C_4d8f_9B8C_029CC2D3BC83"/>
 		<thecustomprofile:enum base_Attribute="EAID_9DD107ED_15AD_4b50_8413_FF59B2911F18"/>
 		<thecustomprofile:enum base_Attribute="EAID_B15CDFA0_039A_4933_943C_5F1162E18077"/>
 		<thecustomprofile:enum base_Attribute="EAID_9B3A5B1D_7B2C_471c_8F66_FE3800B03E45"/>
 		<thecustomprofile:xmlns base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" xmlns="xmlns:xs=http://www.w3.org/2001/XMLSchema"/>
+		<thecustomprofile:memberNames base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" memberNames="unqualified"/>
+		<thecustomprofile:defaultNamespace base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" defaultNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft"/>
 		<thecustomprofile:XSDschema base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
 		<thecustomprofile:targetNamespacePrefix base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" targetNamespacePrefix="gvq_fb"/>
 		<thecustomprofile:targetNamespace base_Package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft"/>
@@ -363,6 +357,8 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<modelDocument/>
 				<tags>
+					<tag xmi:id="EAID_40D7D84F_E7A7_4337_8A57_D90EB7D1411D" name="defaultNamespace" value="http://www.geoviqua.org/schemas/FeedbackModel/Draft#NOTES#Description: Specifies the default namespace attribute in the schema element&#xA;" modelElement="EAID_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
+					<tag xmi:id="EAID_47BF1D3E_91CC_4f4e_9960_A8AEA9CF7112" name="memberNames" value="unqualified" modelElement="EAID_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
 					<tag xmi:id="EAID_2AAB884D_1C13_45b5_BC15_C2438932283C" name="targetNamespace" value="http://www.geoviqua.org/schemas/FeedbackModel/Draft#NOTES#Description: URI to unique target namespace&#xA;" modelElement="EAID_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
 					<tag xmi:id="EAID_10EABE90_9B41_48c5_915B_B04617DC6479" name="targetNamespacePrefix" value="gvq_fb#NOTES#Description: Prefix associated with namespace&#xA;" modelElement="EAID_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
 					<tag xmi:id="EAID_CC459369_6867_4579_9267_DF54C945F439" name="xmlns" value="&lt;memo&gt;#NOTES#xmlns:xs=http://www.w3.org/2001/XMLSchema" modelElement="EAID_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
@@ -554,18 +550,18 @@
 				<modelDocument/>
 				<tags/>
 				<xrefs value="$XREFPROP=$XID={15AB4631-DB2E-4821-B794-2BE77FB347D0}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=abstract;FQName=EPProfile::abstract;@ENDSTEREO;$DES;$CLT={14C5DFB4-0A4B-4918-AE21-0F605569D6D9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Consumer quality data model (User FeedBack)" ea_attsclassified="{AE967922-AE05-42cc-AA15-1EF7636C3768},{FBA1ABA1-8250-4105-924B-2B685EA0085C},{A249EE50-279B-4feb-8548-3BA102AD308F}"/>
+				<extendedProperties tagged="0" package_name="Consumer quality data model (User FeedBack)"/>
 				<links>
-					<Aggregation xmi:id="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Association xmi:id="EAID_5BDFDAF4_4752_4462_A7B6_20179C2BC286" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3"/>
-					<Aggregation xmi:id="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-					<Aggregation xmi:id="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<NoteLink xmi:id="EAID_0C34B442_9E87_49cd_8D3B_0CE95E9D2279" start="EAID_F3F63422_84B3_47f6_8F07_CAFB8D109A5E" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_2A8934FC_E9E5_4c99_82E2_F89D2255A450" start="EAID_0C300047_E005_4bf9_8831_C9A635E54BE1" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_2C4BDDC5_0800_44fc_BACB_3CFBAB33B2CA" start="EAID_A7A5D1EF_6DA5_4e2b_9A8B_9F2E94A14680" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_365C2379_13CE_4895_84B6_C20DD8A1D7C1" start="EAID_5DFBA539_26C5_4a63_9BB9_ABB286245338" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_4B084783_DFA8_4cca_9D92_3DEA7E1F4F05" start="EAID_D4EAC4FB_0561_47ae_82B6_1FA68AF4429D" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
+					<Association xmi:id="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
+					<Association xmi:id="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_64455902_EFAB_4dd4_8066_940097121498" start="EAID_4A93742D_665C_4a6b_96CE_353354230201" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
+					<Association xmi:id="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 				</links>
 			</element>
 			<element xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" xmi:type="uml:Class" name="GVQ_FeedbackGroup" scope="public">
@@ -627,7 +623,7 @@
 				</attributes>
 				<links>
 					<Association xmi:id="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47" start="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" end="EAID_0ADEC692_5DCC_4db0_BADE_C6CDADECC9CF"/>
-					<Aggregation xmi:id="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9"/>
+					<Association xmi:id="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" start="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 				</links>
 			</element>
 			<element xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" xmi:type="uml:Class" name="GVQ_FeedbackItem" scope="public">
@@ -656,63 +652,18 @@
 						<tags/>
 						<xrefs value="$XREFPROP=$XID={849842EB-3DF7-4323-98AD-EE94935BAC97}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=id;FQName=SoaML::id;@ENDSTEREO;$DES;$CLT={EC026561-AC4B-4128-A44E-B90A579189B4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
-					<attribute xmi:idref="EAID_A249EE50_279B_4feb_8548_3BA102AD308F" name="primaryFocus" scope="Public">
-						<initial/>
-						<documentation value="The primary focus (&quot;the&quot;, i.e. exactly one) specifies the context of the item, and (indirectly) points to the resource the feedback is about."/>
-						<model ea_localid="1475" ea_guid="{A249EE50-279B-4feb-8548-3BA102AD308F}"/>
-						<properties type="GVQ_FeedbackFocusType" derived="0" collection="false" duplicates="0" changeability="changeable"/>
-						<coords ordered="0" scale="0"/>
-						<containment containment="Not Specified" position="1"/>
-						<stereotype/>
-						<bounds lower="1" upper="1"/>
-						<options/>
-						<style/>
-						<styleex value="IsLiteral=0;volatile=0;"/>
-						<tags/>
-						<xrefs/>
-					</attribute>
-					<attribute xmi:idref="EAID_AE967922_AE05_42cc_AA15_1EF7636C3768" name="secondaryFocus" scope="Public">
-						<initial/>
-						<documentation value="A secondary focus is a statement about the nature of the feedback item. For example, it may specify a certain domain of discourse in which the associated feedback is to be understood."/>
-						<model ea_localid="1604" ea_guid="{AE967922-AE05-42cc-AA15-1EF7636C3768}"/>
-						<properties type="GVQ_FeedbackFocusType" derived="0" collection="false" duplicates="0" changeability="changeable"/>
-						<coords ordered="0" scale="0"/>
-						<containment containment="Not Specified" position="2"/>
-						<stereotype/>
-						<bounds lower="1" upper="1"/>
-						<options/>
-						<style/>
-						<styleex value="IsLiteral=0;volatile=0;"/>
-						<tags/>
-						<xrefs/>
-					</attribute>
-					<attribute xmi:idref="EAID_FBA1ABA1_8250_4105_924B_2B685EA0085C" name="supplementaryFocus" scope="Public">
-						<initial/>
-						<documentation value="A supplementary focus adds additional references, for example, another region in another data set with similar problems. It is used to formally model references that somehow are related to the feedback item at hand.&#xA;&#xA;In some cases, it may duplicate textual information given in a user comment."/>
-						<model ea_localid="1510" ea_guid="{FBA1ABA1-8250-4105-924B-2B685EA0085C}"/>
-						<properties type="GVQ_FeedbackFocusType" derived="0" collection="false" duplicates="0" changeability="changeable"/>
-						<coords ordered="0"/>
-						<containment containment="Not Specified" position="3"/>
-						<stereotype/>
-						<bounds lower="1" upper="1"/>
-						<options/>
-						<style/>
-						<styleex value="IsLiteral=0;volatile=0;"/>
-						<tags/>
-						<xrefs value="$XREFPROP=$XID={11E7803F-E551-422d-8AD1-DB6E09E8D47B}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FBA1ABA1-8250-4105-924B-2B685EA0085C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-					</attribute>
 				</attributes>
 				<links>
-					<Aggregation xmi:id="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9"/>
+					<Association xmi:id="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
+					<Association xmi:id="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
+					<Association xmi:id="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" start="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" end="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9"/>
 					<Generalization xmi:id="EAID_0FE5F778_89CA_429c_953E_8278A853A4BD" start="EAID_1DEC05B4_2403_45a1_82CA_79AF5E5DEB66" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-					<Aggregation xmi:id="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
+					<Association xmi:id="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" start="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Generalization xmi:id="EAID_81A79DB1_253E_4a40_8D27_1ECB0C01BB4C" start="EAID_3EB0BD09_FB18_42fe_A214_BCC6DA1E9C1C" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Generalization xmi:id="EAID_AA6DC796_DF20_4f08_AC6B_F6712A932128" start="EAID_0EE537A1_AF88_4afa_94A4_5B788F336114" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Generalization xmi:id="EAID_C1A654C3_CD3F_469e_A01B_15C480B9409A" start="EAID_3C7773EB_BBCF_4f17_8D0E_3220BF61CF10" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-					<Aggregation xmi:id="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Association xmi:id="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" start="EAID_A7A5D1EF_6DA5_4e2b_9A8B_9F2E94A14680" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Generalization xmi:id="EAID_DB343E07_31C9_4560_B58F_CE6BA9460D23" start="EAID_DD7CBC44_B110_4fe0_A849_E777BE82A7CD" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
-					<Aggregation xmi:id="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" start="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 					<Generalization xmi:id="EAID_F87ECC54_8059_4214_97EB_75583943DDE5" start="EAID_40D6B57F_4420_43bc_927E_2C2EBC9810C9" end="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26"/>
 				</links>
 			</element>
@@ -763,14 +714,19 @@
 						<model ea_localid="1516" ea_guid="{15EBA142-7D48-4d61-B991-706472CE3220}"/>
 						<properties type="MD_ScopeCode" derived="0" collection="false" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
-						<containment position="2"/>
-						<stereotype/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype stereotype="XSDelement"/>
 						<bounds lower="1" upper="1"/>
 						<options/>
 						<style/>
 						<styleex value="IsLiteral=0;volatile=0;"/>
-						<tags/>
-						<xrefs/>
+						<tags>
+							<tag xmi:id="EAID_4EE0F1CB_9BC5_48e8_BBD8_252B71182A22" name="anonymousRole" value="true" notes="Values: true | false&#xA;Default: false&#xA;Description: The class type will be directly embedded within the complexType definition. Omit attribute or role type wrapper&#xA;"/>
+							<tag xmi:id="EAID_4D22C907_DF31_43ba_A4B9_3C8E7EDA1E6A" name="form" notes="Values: qualified | unqualified&#xA;Description: Overrides the elementFormDefault for this schema&#xA;"/>
+							<tag xmi:id="EAID_F6FD2987_EDF0_4241_939D_9A707202C9EA" name="default" notes="Description: As defined in XML Schema sepecification&#xA;"/>
+							<tag xmi:id="EAID_9D8BC127_3804_4a7d_A952_974D1AB7AEFC" name="fixed" notes="Description: As defined in XML Schema sepecification&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={B19C3607-5BBE-47f9-B5D8-8FEE362BC54D}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDelement;GUID={F912D22F-5F0B-4a2c-A6E6-C995A1E06D2D};@ENDSTEREO;$DES;$CLT={15EBA142-7D48-4d61-B991-706472CE3220}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
 				</attributes>
 				<links>
@@ -1010,7 +966,7 @@
 						<coords ordered="0" scale="0"/>
 						<containment position="0"/>
 						<stereotype/>
-						<bounds lower="1" upper="1"/>
+						<bounds lower="0" upper="*"/>
 						<options/>
 						<style/>
 						<styleex value="IsLiteral=0;volatile=0;"/>
@@ -1034,7 +990,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_5F6E151B_2A3F_4406_9FBB_018697CD181D" name="usageDescription" scope="Public">
 						<initial/>
-						<documentation value="For supplementary information on the exact procedure carried out"/>
+						<documentation value="For supplementary information on the exact procedure carried out."/>
 						<model ea_localid="1506" ea_guid="{5F6E151B-2A3F-4406-9FBB-018697CD181D}"/>
 						<properties type="string" derived="0" collection="false" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -1053,14 +1009,19 @@
 						<model ea_localid="1507" ea_guid="{8AF6D42F-5F3F-4701-9ACB-15C90DFC8DE9}"/>
 						<properties type="MD_Identifier" derived="0" collection="true" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
-						<containment containment="Not Specified" position="3"/>
-						<stereotype/>
-						<bounds lower="0" upper="*"/>
+						<containment position="3"/>
+						<stereotype stereotype="XSDelement"/>
+						<bounds lower="0" upper="-1"/>
 						<options/>
 						<style/>
 						<styleex value="IsLiteral=0;volatile=0;"/>
-						<tags/>
-						<xrefs value="$XREFPROP=$XID={13C452DD-7E9C-492b-85C0-7DC05D3E2EA6}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={8AF6D42F-5F3F-4701-9ACB-15C90DFC8DE9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+						<tags>
+							<tag xmi:id="EAID_B2E8D0D5_E7C0_49bd_B55B_BAE0A61A43A9" name="anonymousRole" value="true" notes="Values: true | false&#xA;Default: false&#xA;Description: The class type will be directly embedded within the complexType definition. Omit attribute or role type wrapper&#xA;"/>
+							<tag xmi:id="EAID_D7D4AD5E_9FDA_415c_8A12_3528CCEC83BD" name="form" notes="Values: qualified | unqualified&#xA;Description: Overrides the elementFormDefault for this schema&#xA;"/>
+							<tag xmi:id="EAID_B5C2445C_1379_4637_AF3E_1F439A803418" name="default" notes="Description: As defined in XML Schema sepecification&#xA;"/>
+							<tag xmi:id="EAID_0F20ED70_14FC_46e5_A304_97E139A27231" name="fixed" notes="Description: As defined in XML Schema sepecification&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={13C452DD-7E9C-492b-85C0-7DC05D3E2EA6}$XID;$NAM=CustomProperties$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isID@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={8AF6D42F-5F3F-4701-9ACB-15C90DFC8DE9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={20EA8447-CF0A-4574-B6A3-D9DA8E3EAB31}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDelement;GUID={F912D22F-5F0B-4a2c-A6E6-C995A1E06D2D};@ENDSTEREO;$DES;$CLT={8AF6D42F-5F3F-4701-9ACB-15C90DFC8DE9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
 				</attributes>
 				<links>
@@ -1452,7 +1413,7 @@
 				<source xmi:idref="EAID_A7A5D1EF_6DA5_4e2b_9A8B_9F2E94A14680">
 					<model ea_localid="545" type="Class" name="GVQ_FeedbackFocus"/>
 					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="none" containment="Unspecified"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
@@ -1463,7 +1424,7 @@
 				<target xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
 					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
 					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="none" containment="Unspecified"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
@@ -1477,43 +1438,9 @@
 				<parameterSubstitutions/>
 				<documentation/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels/>
+				<labels lb="1" rb="1"/>
 				<extendedProperties virtualInheritance="0"/>
-				<style value="LFEP={EC026561-AC4B-4128-A44E-B90A579189B4}R;"/>
-				<xrefs/>
-				<tags/>
-			</connector>
-			<connector xmi:idref="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28">
-				<source xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
-					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</source>
-				<target xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
-					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="composite" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</target>
-				<model ea_localid="662"/>
-				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
-				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation/>
-				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels lb="1"/>
-				<extendedProperties virtualInheritance="0"/>
-				<style value="LFEP={A249EE50-279B-4feb-8548-3BA102AD308F}L;"/>
+				<style value="LFEP={EC026561-AC4B-4128-A44E-B90A579189B4}R;LFSP={592AF5F4-9FCE-4265-9FD9-541A82D475E2}L;"/>
 				<xrefs/>
 				<tags/>
 			</connector>
@@ -1549,74 +1476,6 @@
 				<labels lb="0..*" rb="1"/>
 				<extendedProperties virtualInheritance="0"/>
 				<style/>
-				<xrefs/>
-				<tags/>
-			</connector>
-			<connector xmi:idref="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3">
-				<source xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
-					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</source>
-				<target xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
-					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="composite" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</target>
-				<model ea_localid="664"/>
-				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
-				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation/>
-				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels lb="0..*"/>
-				<extendedProperties virtualInheritance="0"/>
-				<style value="LFEP={AE967922-AE05-42cc-AA15-1EF7636C3768}L;"/>
-				<xrefs/>
-				<tags/>
-			</connector>
-			<connector xmi:idref="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8">
-				<source xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
-					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</source>
-				<target xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
-					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="composite" containment="Unspecified"/>
-					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-					<documentation/>
-					<xrefs/>
-					<tags/>
-				</target>
-				<model ea_localid="665"/>
-				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
-				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation/>
-				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels lb="0..*"/>
-				<extendedProperties virtualInheritance="0"/>
-				<style value="LFEP={FBA1ABA1-8250-4105-924B-2B685EA0085C}L;"/>
 				<xrefs/>
 				<tags/>
 			</connector>
@@ -1722,6 +1581,111 @@
 				<xrefs/>
 				<tags/>
 			</connector>
+			<connector xmi:idref="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4">
+				<source xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
+					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
+					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
+					<role name="primaryFocus" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="The primary focus (&quot;the&quot;, i.e. exactly one) specifies the context of an item, and (indirectly) points to the resource the feedback is about."/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="668"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation value="The primary focus (&quot;the&quot;, i.e. exacly one) specifies the context of the item, and points to the data set or resource the feedback is about. "/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rb="1" rt="+primaryFocus"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B">
+				<source xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
+					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
+					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
+					<role name="supplementaryFoci" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="A supplementary focus adds additional references, for example, another region in another data set with similar problems. It is used to formally model references that somehow are related to the feedback item at hand, without implying relevance of the feedback to the focused data."/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="670"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation value="A supplementary focus adds additional references, for example, another region in another data set with similar problems. It is used to formally model references that somehow are related to the feedback item at hand, without implying relevance of the feedback to the focused data."/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rb="0..*" rt="+supplementaryFoci"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_EF782FA2_558B_4a04_8707_A40C26394CED">
+				<source xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
+					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_14C5DFB4_0A4B_4918_AE21_0F605569D6D9">
+					<model ea_localid="523" type="Class" name="GVQ_FeedbackFocusType"/>
+					<role name="secondaryFoci" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="A secondary focus says something about the nature of the feedback item. For example, it may specify a certain domain of discourse in which the statements have to be understood."/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="669"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation value="A secondary focus says something about the nature of the feedback item. For example, it may specify a certain domain of discourse in which the statements have to be understood. "/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rb="0..*" rt="+secondaryFoci"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
 			<connector xmi:idref="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47">
 				<source xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9">
 					<model ea_localid="610" type="Class" name="GVQ_FeedbackGroup"/>
@@ -1757,22 +1721,22 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB">
-				<source xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
-					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
+			<connector xmi:idref="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65">
+				<source xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9">
+					<model ea_localid="610" type="Class" name="GVQ_FeedbackGroup"/>
 					<role visibility="Public" targetScope="instance"/>
-					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
-					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
 					<documentation/>
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9">
-					<model ea_localid="610" type="Class" name="GVQ_FeedbackGroup"/>
-					<role visibility="Public" targetScope="instance"/>
-					<type multiplicity="1" aggregation="composite" containment="Unspecified"/>
+				<target xmi:idref="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26">
+					<model ea_localid="524" type="Class" name="GVQ_FeedbackItem"/>
+					<role name="items" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
@@ -1780,12 +1744,13 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="654"/>
-				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<model ea_localid="667"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
 				<documentation/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels lb="1..*" rb="1"/>
+				<labels lb="1" rb="1..*" rt="+items"/>
 				<extendedProperties virtualInheritance="0"/>
 				<style/>
 				<xrefs/>
@@ -2052,6 +2017,14 @@
 				<packageImport xmi:id="mmref01">
 					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
 				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XSDelement" name="XSDelement">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XSDelement-base_Attribute" name="base_Attribute" association="Attribute_XSDelement">
+						<type href="http://schema.omg.org/spec/UML/2.1/#Attribute"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_XSDelement" name="A_Attribute_XSDelement" memberEnd="extension_XSDelement XSDelement-base_Attribute">
+					<ownedEnd xmi:id="extension_XSDelement" name="extension_XSDelement" type="XSDelement" isComposite="true" lower="0" upper="1" memberEnd="extension_XSDelement XSDelement-base_Attribute"/>
+				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="targetNamespacePrefix" name="targetNamespacePrefix">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="targetNamespacePrefix-base_Package" name="base_Package" association="Package_targetNamespacePrefix">
 						<type href="http://schema.omg.org/spec/UML/2.1/#Package"/>
@@ -2062,6 +2035,28 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_targetNamespacePrefix" name="A_Package_targetNamespacePrefix" memberEnd="extension_targetNamespacePrefix targetNamespacePrefix-base_Package">
 					<ownedEnd xmi:id="extension_targetNamespacePrefix" name="extension_targetNamespacePrefix" type="targetNamespacePrefix" isComposite="true" lower="0" upper="1" memberEnd="extension_targetNamespacePrefix targetNamespacePrefix-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="anonymousRole" name="anonymousRole">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="anonymousRole-base_Attribute" name="base_Attribute" association="Attribute_anonymousRole">
+						<type href="http://schema.omg.org/spec/UML/2.1/#Attribute"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="anonymousRole-anonymousRole" name="anonymousRole">
+						<type href="http://schema.omg.org/spec/UML/2.1/#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_anonymousRole" name="A_Attribute_anonymousRole" memberEnd="extension_anonymousRole anonymousRole-base_Attribute">
+					<ownedEnd xmi:id="extension_anonymousRole" name="extension_anonymousRole" type="anonymousRole" isComposite="true" lower="0" upper="1" memberEnd="extension_anonymousRole anonymousRole-base_Attribute"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="memberNames" name="memberNames">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="memberNames-base_Package" name="base_Package" association="Package_memberNames">
+						<type href="http://schema.omg.org/spec/UML/2.1/#Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="memberNames-memberNames" name="memberNames">
+						<type href="http://schema.omg.org/spec/UML/2.1/#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_memberNames" name="A_Package_memberNames" memberEnd="extension_memberNames memberNames-base_Package">
+					<ownedEnd xmi:id="extension_memberNames" name="extension_memberNames" type="memberNames" isComposite="true" lower="0" upper="1" memberEnd="extension_memberNames memberNames-base_Package"/>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="enum" name="enum">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="enum-base_Attribute" name="base_Attribute" association="Attribute_enum">
@@ -2081,6 +2076,17 @@
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_targetNamespace" name="A_Package_targetNamespace" memberEnd="extension_targetNamespace targetNamespace-base_Package">
 					<ownedEnd xmi:id="extension_targetNamespace" name="extension_targetNamespace" type="targetNamespace" isComposite="true" lower="0" upper="1" memberEnd="extension_targetNamespace targetNamespace-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="defaultNamespace" name="defaultNamespace">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="defaultNamespace-base_Package" name="base_Package" association="Package_defaultNamespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/#Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="defaultNamespace-defaultNamespace" name="defaultNamespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_defaultNamespace" name="A_Package_defaultNamespace" memberEnd="extension_defaultNamespace defaultNamespace-base_Package">
+					<ownedEnd xmi:id="extension_defaultNamespace" name="extension_defaultNamespace" type="defaultNamespace" isComposite="true" lower="0" upper="1" memberEnd="extension_defaultNamespace defaultNamespace-base_Package"/>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="xmlns" name="xmlns">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="xmlns-base_Package" name="base_Package" association="Package_xmlns">
@@ -2874,9 +2880,9 @@
 			<diagram xmi:id="EAID_AC46AD7A_FF32_4647_A110_05A5704194EC">
 				<model package="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57" localID="449" owner="EAPK_B7ABD61D_CDBD_4ac3_B147_92B60CE9BC57"/>
 				<properties name="Feedback model" type="Logical"/>
-				<project author="simothum" version="1.0" created="2011-12-09 16:43:51" modified="2012-04-17 15:27:42"/>
+				<project author="simothum" version="1.0" created="2011-12-09 16:43:51" modified="2012-04-26 17:24:24"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=3;PPgs.cy=1;DocSize.cx=791;DocSize.cy=1138;ShowDetails=0;Orientation=P;Zoom=94;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=0;ShowFQN=0;NoFullScope=0;"/>
-				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;DefaultLang=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;OverrideLinkedF=0;HideConnStereotype=0;ShowFQN=0;NoFullScope=0;SaveTag=EE823DB0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;DefaultLang=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;OverrideLinkedF=0;HideConnStereotype=0;ShowFQN=0;NoFullScope=0;SaveTag=983F7305;"/>
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
 				<extendedProperties/>
@@ -2889,7 +2895,7 @@
 					<element geometry="Left=1182;Top=675;Right=1445;Bottom=784;" subject="EAID_596FDD21_F873_4cdf_A890_41DDCBCB3DD9" seqno="6" style="DUID=49052F0D;"/>
 					<element geometry="Left=1618;Top=252;Right=1788;Bottom=322;" subject="EAID_40D6B57F_4420_43bc_927E_2C2EBC9810C9" seqno="7" style="DUID=407F2381;"/>
 					<element geometry="Left=1180;Top=5;Right=1295;Bottom=128;" subject="EAID_0EEEB5D5_583C_4fab_8436_2D7C57664AF4" seqno="8" style="DUID=75819177;"/>
-					<element geometry="Left=1181;Top=143;Right=1443;Bottom=293;" subject="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" seqno="9" style="DUID=31F5D0D7;"/>
+					<element geometry="Left=1183;Top=143;Right=1445;Bottom=293;" subject="EAID_29048C5F_6403_48c4_B022_D68B23DDFB26" seqno="9" style="DUID=31F5D0D7;"/>
 					<element geometry="Left=935;Top=14;Right=1091;Bottom=84;" subject="EAID_A7A5D1EF_6DA5_4e2b_9A8B_9F2E94A14680" seqno="10" style="DUID=E1DBD3A5;"/>
 					<element geometry="Left=723;Top=438;Right=918;Bottom=508;" subject="EAID_0C300047_E005_4bf9_8831_C9A635E54BE1" seqno="11" style="DUID=FC114109;"/>
 					<element geometry="Left=773;Top=336;Right=912;Bottom=406;" subject="EAID_D4EAC4FB_0561_47ae_82B6_1FA68AF4429D" seqno="12" style="DUID=8393678B;"/>
@@ -2901,28 +2907,28 @@
 					<element geometry="Left=1022;Top=452;Right=1283;Bottom=553;" subject="EAID_3C7773EB_BBCF_4f17_8D0E_3220BF61CF10" seqno="18" style="DUID=361FA987;"/>
 					<element geometry="Left=1626;Top=172;Right=1789;Bottom=242;" subject="EAID_1DEC05B4_2403_45a1_82CA_79AF5E5DEB66" seqno="19" style="DUID=29956DC4;"/>
 					<element geometry="Left=219;Top=149;Right=431;Bottom=251;" subject="EAID_76AF7E04_FE76_4e3d_BC36_A1518F771FC3" seqno="20" style="DUID=ABBB1810;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0FE5F778_89CA_429c_953E_8278A853A4BD" style="Mode=3;EOID=31F5D0D7;SOID=29956DC4;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=89;SY=13;EX=-130;EY=15;EDGE=2;$LLB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_48CBD2E6_DBC2_45e9_B8F4_2EA0FEAFEC28" style="Mode=3;EOID=31F5D0D7;SOID=A2951EDD;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=89;SY=-1;EX=-130;EY=6;EDGE=2;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D0DE8FA4_0A16_4041_A915_96BB8B7CBBB3" style="Mode=3;EOID=31F5D0D7;SOID=A2951EDD;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=89;SY=-16;EX=0;EY=0;EDGE=2;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E6B7A018_66CE_4b6a_A280_058FAA4161F8" style="Mode=3;EOID=31F5D0D7;SOID=A2951EDD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-72;SY=34;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2A8934FC_E9E5_4c99_82E2_F89D2255A450" style="Mode=3;EOID=A2951EDD;SOID=FC114109;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_5BDFDAF4_4752_4462_A7B6_20179C2BC286" style="Mode=3;EOID=ABBB1810;SOID=A2951EDD;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2ABC62E0_1F30_4b58_AD3E_192E82361D71" style="Mode=3;EOID=ABBB1810;SOID=A83CB405;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=114;SY=118;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0C34B442_9E87_49cd_8D3B_0CE95E9D2279" style="Mode=3;EOID=A2951EDD;SOID=A83CB405;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=-2;EY=43;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_365C2379_13CE_4895_84B6_C20DD8A1D7C1" style="Mode=3;EOID=A2951EDD;SOID=0274D14D;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DB343E07_31C9_4560_B58F_CE6BA9460D23" style="Mode=3;EOID=31F5D0D7;SOID=8E4A47EE;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AA6DC796_DF20_4f08_AC6B_F6712A932128" style="Mode=3;EOID=31F5D0D7;SOID=9A0773EA;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=17;SY=49;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C1A654C3_CD3F_469e_A01B_15C480B9409A" style="Mode=3;EOID=31F5D0D7;SOID=361FA987;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0FE5F778_89CA_429c_953E_8278A853A4BD" style="Mode=3;EOID=31F5D0D7;SOID=29956DC4;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=14;SY=36;EX=14;EY=39;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_81A79DB1_253E_4a40_8D27_1ECB0C01BB4C" style="Mode=3;EOID=31F5D0D7;SOID=DBA7EA6E;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C1A654C3_CD3F_469e_A01B_15C480B9409A" style="Mode=3;EOID=31F5D0D7;SOID=361FA987;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=-81;EY=43;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_64455902_EFAB_4dd4_8066_940097121498" style="Mode=3;EOID=A2951EDD;SOID=F89D0F40;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;SCME=1;SCTR=1;EDGE=4;SCTR.LEFT=193;SCTR.TOP=-212;SCTR.RIGHT=235;SCTR.BOTTOM=-183;$LLB=;LLT=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=219:-183$193:-183$193:-212$219:-212$;" subject="EAID_813A77A9_CB07_4c84_8440_5C08567297A5" style="Mode=3;EOID=ABBB1810;SOID=ABBB1810;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=34;EY=-43;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4B084783_DFA8_4cca_9D92_3DEA7E1F4F05" style="Mode=3;EOID=A2951EDD;SOID=8393678B;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=-72;SY=34;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2A8934FC_E9E5_4c99_82E2_F89D2255A450" style="Mode=3;EOID=A2951EDD;SOID=FC114109;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=75;SY=-34;EX=-128;EY=74;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" style="Mode=3;EOID=31F5D0D7;SOID=E1DBD3A5;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=-81;EY=44;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_64455902_EFAB_4dd4_8066_940097121498" style="Mode=3;EOID=A2951EDD;SOID=F89D0F40;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=75;SY=-34;EX=-128;EY=74;EDGE=3;$LLB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_D86C960A_48A3_43fb_95F6_0FF1AE4D7CD0" style="Mode=3;EOID=31F5D0D7;SOID=E1DBD3A5;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2C4BDDC5_0800_44fc_BACB_3CFBAB33B2CA" style="Mode=3;EOID=A2951EDD;SOID=E1DBD3A5;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=-56;EY=36;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_86732B52_7258_4e1c_8753_2B09CA6DBB5A" style="Mode=3;EOID=75819177;SOID=E1DBD3A5;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=-1;EY=53;EDGE=3;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_B6FB5D32_DF2E_4c1d_A5D3_ACD1934A5EBB" style="Mode=3;EOID=49052F0D;SOID=31F5D0D7;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-130;SY=49;EX=89;EY=33;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=68:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_5E675F93_5D9A_43a7_BB09_59224BCEF6B4" style="Mode=3;EOID=A2951EDD;SOID=31F5D0D7;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=89;EY=-16;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=73:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_EF782FA2_558B_4a04_8707_A40C26394CED" style="Mode=3;EOID=A2951EDD;SOID=31F5D0D7;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-130;SY=-22;EX=-1;EY=-38;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=95:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_6090DDD8_D47A_4c7f_8551_BA097064B16B" style="Mode=3;EOID=A2951EDD;SOID=31F5D0D7;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F87ECC54_8059_4214_97EB_75583943DDE5" style="Mode=3;EOID=31F5D0D7;SOID=407F2381;Color=-1;LWidth=0;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_61568D8C_8532_4b48_BA53_4CADEA12CF47" style="Mode=3;EOID=16822E2A;SOID=49052F0D;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AA6DC796_DF20_4f08_AC6B_F6712A932128" style="Mode=3;EOID=31F5D0D7;SOID=9A0773EA;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=31:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_74B7D37B_54DF_412c_B07E_7847F8E10A65" style="Mode=3;EOID=31F5D0D7;SOID=49052F0D;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;SCME=1;SCTR=1;EDGE=4;SCTR.LEFT=193;SCTR.TOP=-212;SCTR.RIGHT=235;SCTR.BOTTOM=-183;$LLB=;LLT=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=219:-183$193:-183$193:-212$219:-212$;" subject="EAID_813A77A9_CB07_4c84_8440_5C08567297A5" style="Mode=3;EOID=ABBB1810;SOID=ABBB1810;Color=-1;LWidth=0;Hidden=0;"/>
 				</elements>
 			</diagram>
 		</diagrams>

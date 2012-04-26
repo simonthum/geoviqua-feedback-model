@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
+    xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft">
+
+    <xs:include schemaLocation="feedback.xsd"/>
+
+    <xs:complexType name="feedbackCollection">
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element ref="feedbackGroup"/>
+            <xs:element ref="feedbackTarget"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:element name="feedbackCollection" type="feedbackCollection"/>
+    <xs:element name="feedbackGroup" type="GVQ_FeedbackGroup"/>
+    <xs:element name="feedbackItem" type="GVQ_FeedbackItem"/>
+    <xs:element name="feedbackTarget" type="GVQ_FeedbackTarget"/>
+</xs:schema>
