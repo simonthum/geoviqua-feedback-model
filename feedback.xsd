@@ -233,8 +233,8 @@ Also see GVQ_DomainFocus</xs:documentation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element name="item" type="GVQ_FeedbackItem" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="GVQ_FeedbackItem" type="GVQ_FeedbackItem" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="itemIdentifier" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<!-- TODO here redundant copy of thew item title might be added -->
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
