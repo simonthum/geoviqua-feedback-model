@@ -9,11 +9,6 @@
 	<xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
 	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="schemas/ISOSchemas_20090316/gmd/gmd.xsd"/>
 	<xs:import namespace="http://www.geoviqua.org/schemas/ProducerModel_v2" schemaLocation="schemas/GeoViQua/GeoViQua_DataQuality.xsd"/>
-	<xs:import namespace=""/>
-	<xs:import namespace=""/>
-	<xs:import namespace=""/>
-	<xs:import namespace=""/>
-	<xs:import namespace=""/>
 	<xs:complexType name="GVQ_ExternalFeedback">
 		<xs:annotation>
 			<xs:documentation>External feedback is intended to associate information about the subject just to highlight its presence (without adding extra value?)
