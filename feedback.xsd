@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft">
+<xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" 
+		xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:md="http://www.isotc211.org/2005/gmd"
+		xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
+		xmlns:gvq="http://www.geoviqua.org/schemas/ProducerModel_v2"
+	>
 	<xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
-	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="19139_2005/gmd/gmd.xsd"/>
-	
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="schemas/ISOSchemas_20090316/gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.geoviqua.org/schemas/ProducerModel_v2" schemaLocation="schemas/GeoViQua/GeoViQua_DataQuality.xsd"/>
 	<xs:complexType name="GVQ_ExternalFeedback">
 		<xs:annotation>
 			<xs:documentation>External feedback is intended to associate information about the subject just to highlight its presence (without adding extra value?)
@@ -15,11 +21,11 @@ A point in question is the role of persistent URLs here, which should probably b
 			<xs:extension base="GVQ_FeedbackItem">
 				<xs:sequence>
 					<xs:element name="resourceURL" type="xs:string" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="mime" type="xs:string" minOccurs="1" maxOccurs="1">
+					<xs:element name="mime-type" type="xs:string" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation>IETF RFC 2046 MIME Type
 
-Mime type the resource should answer in.</xs:documentation>
+Mime type the resource should answer in. Also, it could inform the user whether a document, web page or other resource is linked.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -38,10 +44,10 @@ The focus may refer to some aspect that actually exists (a radio band, a sensor,
 	</xs:complexType>
 	<xs:complexType name="GVQ_FeedbackItem">
 		<xs:annotation>
-			<xs:documentation>The feedback item is the container of the actual feedback. Every item is set into context by a combination of foci, whose interpretation is subject to application guidelines. General intent is specified in the field.</xs:documentation>
+			<xs:documentation>The feedback item is the container of the actual feedback. Every item is set into context by a combination of foci, whose interpretation is subject to application guidelines. General intent is specified in the arc.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="1">
+			<xs:element ref="md:MD_Identifier" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>This is an identifier for the feedback item. Main use case is a stable identifier for the feedback focus. Thus, it only needs to be locally unique.</xs:documentation>
 				</xs:annotation>
@@ -71,9 +77,9 @@ The parent is intended to model containment such as "this sensor is contained in
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="parent" type="GVQ_FeedbackTarget" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="target" type="xs:string" minOccurs="1" maxOccurs="1">
+			<xs:element name="resourceRef" type="md:MD_Identifier_Type" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>This filed points to the target which is typically not inside the same system. Any considerations what exactly should go into this field are to be set in application guidelines, or subclasses of this.
+					<xs:documentation>This field points to a resource (could be the identifier of a dataset in a metadata catalog in GEOSS) which is typically not inside the same system. Any considerations what exactly should go into this field are to be set in application guidelines, or subclasses of this.
 
 Actually, the feedback model does not depend on the target's type, it just postulates a canonicalized or otherwise "matchable" identifier in this field. This could take the form of an outside service to provide the necessary matching capability.</xs:documentation>
 				</xs:annotation>
@@ -86,21 +92,9 @@ Actually, the feedback model does not depend on the target's type, it just postu
 			<xs:element name="GVQ_FeedbackTarget" type="GVQ_FeedbackTarget" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GVQ_GeoLabel">
+	<xs:complexType name="GVQ_QualityOverride">
 		<xs:annotation>
-			<xs:documentation>Could be used to "attach" GeoLabel to existing datasets to make it discoverable without changing producer metadata.
-
-Technically, this could be a link to some web service which validates the asserted GeoLabel and displays an appropriate page or other output.</xs:documentation>
-		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="GVQ_FeedbackItem">
-				<xs:sequence/>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="GVQ_MetadataOverride">
-		<xs:annotation>
-			<xs:documentation>Could be used for users to enhance metadata or highlight errors in provider metadata.</xs:documentation>
+			<xs:documentation>Could be used for users to enhance metadata or highlight errors in provider quality metadata.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackItem">
@@ -131,9 +125,9 @@ Technically, this could be a link to some web service which validates the assert
 			<xs:extension base="GVQ_FeedbackItem">
 				<xs:sequence>
 					<xs:element name="usagePurpose" type="GVQ_ReportAspectCode" minOccurs="0" maxOccurs="unbounded"/>
-					<xs:element name="Citation" type="md:CI_Citation_Type" minOccurs="0" maxOccurs="1">
+					<xs:element name="publication" type="gvq:GVQ_PublicationType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Link to one or more publications which describe the use, if relevant</xs:documentation>
+							<xs:documentation>Link to zero or more publications which describe the use, if relevant</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="usageDescription" type="xs:string" minOccurs="1" maxOccurs="1">
@@ -152,7 +146,7 @@ Technically, this could be a link to some web service which validates the assert
 	</xs:complexType>
 	<xs:simpleType name="GVQ_ReportAspectCode">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="Useage"/>
+			<xs:enumeration value="Usage"/>
 			<xs:enumeration value="Problem"/>
 			<xs:enumeration value="FitnessForPurpose"/>
 			<xs:enumeration value="Alternatives"/>
@@ -190,30 +184,25 @@ Also see GVQ_DomainFocus</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GVQ_ThematicFocus">
+	<xs:complexType name="GVQ_SubjectFocus">
 		<xs:annotation>
-			<xs:documentation>The Theme is intended to act as a title when given, i.e. a less formal summary as is common on discussion boards.</xs:documentation>
+			<xs:documentation>The subject is intended to act as a title when given, i.e. a concise summary as is used to structure emails or discussion boards.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1">
-						<xs:annotation>
-							<xs:documentation>ideally this should link to a list of codes</xs:documentation>
-						</xs:annotation>
-					</xs:element>
+					<xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="GVQ_DatacentricFocus">
+	<xs:complexType name="GVQ_DataFocus">
 		<xs:annotation>
 			<xs:documentation>A data centric focus describes sub-sets of a data set or data provided by a service. It is to be interpreted as the intersection of the attributes which are specified, i.e. an unspecified attribute does not constrain the focus.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element name="layer" type="xs:string" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="md:EX_SpatialTemporalExtent" minOccurs="0" maxOccurs="1"/>
 					<xs:element name="band" type="xs:string" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
@@ -224,15 +213,14 @@ Also see GVQ_DomainFocus</xs:documentation>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="GVQ_FeedbackFocus">
+	<xs:complexType name="GVQ_FeedbackReply">
 		<xs:annotation>
 			<xs:documentation>The FeedbackFocus specifies which other Feedback is the focus of the feedback given.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element name="itemIdentifier" type="xs:string" minOccurs="1" maxOccurs="1"/>
-					<!-- TODO here redundant copy of thew item title might be added -->
+					<xs:element ref="md:MD_Identifier" minOccurs="1" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -278,14 +266,14 @@ Every feedback  item is contained in exactly one feedback group. In other words,
 			<xs:element name="items" type="GVQ_FeedbackItem" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GVQ_DomainFocus">
+	<xs:complexType name="GVQ_ThemeFocus">
 		<xs:annotation>
 			<xs:documentation>We identify EO domains using selected ontologies such as GEMET concepts. The DomainFocus, unlike the TagFocus, uses domain URNs defined in some ontology.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element name="applicationDomainURN" type="xs:string" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="themeURN" type="xs:string" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
