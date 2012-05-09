@@ -21,6 +21,10 @@
    ISO elements are included to ease interoperability in cases where a
    producer decides to include user-suggested data into the official
    metadata he maintains.
+* Contents
+  The feedback model consists of an Enterprise architect UML model and
+  diagram, two xml schema files, and the application guidelines (this document).
+  Likely, a JSON mapping will also be delveleoped.
 * Concepts
 ** Conceptual Model
 
@@ -111,57 +115,73 @@ roles using hypothetic examples:
 | _Tag_          |                          | user-supplied tags              | autom. discovered tags     |
 #+CAPTION: [Feedback type and roles]{Examples of interpreting the feedback types in different roles.}
 
-* Use cases
-  The application guidelines are intended to clarify how the model is
-  to be applied. It is to become a "real" document, perhaps from input
-  on this page. In the following, use cases and ther application is
-  discussed.
-** A domain-specific rating in the context of wheather forecasting
-   - One feedback group containing one item
-   - The one item is a rating
-   - The primary focus of the rating is a unqualified data-centric focus
-   - The secondary focus of the rating is a "wheather forecasting" domain focus
-   - The targets of both foci refer to the data set in question
-** A rating based on a part of the data
-   This works as described for a domain-specific rating, except that
-   only one focus, a data-centric focus, is needed.  It is then used
-   to describe the part of the dataset the feedback is about.  If more
-   than one "hotspot" is involved, these can be added as secondary
-   foci.
-** Justification for a rating
-   This involves creating a feedback group with two items:
-   - One user comment (the justification)
-   - One rating
-   Both should point to the data set in question using an identical
-   primary focus. Otherwise, the description from the domain-specific
-   rating applies.
-** Add report in which the data set is intercompared
-** Add a domain-specifc comment to a data set
-** Search for comments pertaining to a domain
-   This would work by first finding a URN within the applicable ontology,
-   e.g. GEMET concepts.
+* Application
+** Tasks
+   This section discusses issues specific to the application of the
+   feeback model to perform certain tasks. Since GeoViQua will implement
+   some kind of feedback server or infrastructure, the tasks are derived from
+   this setting.
+*** Encoding feedback server answers
+    A server answer is best encoded in a feedbackCollection xml schema
+    element (or an equivalen in another encoding).  All targets and
+    feedback groups relevant in an answer can be placed in this
+    element.
+*** Submitting feedback
+    Submission should also be based on the feedbackCollection (or
+    analoguous elements of other encodings).  On submisson, applicable
+    constraints should be checked by a server application in charge of
+    persisting the information.
+** Use cases
+   The application guidelines are intended to clarify how the model is
+   to be applied. It is to become a "real" document, perhaps from input
+   on this page. In the following, use cases and ther application is
+   discussed.
+*** A domain-specific rating in the context of wheather forecasting
+    - One feedback group containing one item
+    - The one item is a rating
+    - The primary focus of the rating is a unqualified data-centric focus
+    - The secondary focus of the rating is a "wheather forecasting" domain focus
+    - The targets of both foci refer to the data set in question
+*** A rating based on a part of the data
+    This works as described for a domain-specific rating, except that
+    only one focus, a data-centric focus, is needed.  It is then used
+    to describe the part of the dataset the feedback is about.  If more
+    than one "hotspot" is involved, these can be added as secondary
+    foci.
+*** Justification for a rating
+    This involves creating a feedback group with two items:
+    - One user comment (the justification)
+    - One rating
+    Both should point to the data set in question using an identical
+    primary focus. Otherwise, the description from the domain-specific
+    rating applies.
+*** Add report in which the data set is intercompared
+*** Add a domain-specifc comment to a data set
+*** Search for comments pertaining to a domain
+    This would work by first finding a URN within the applicable ontology,
+    e.g. GEMET concepts.
 
-   Then, all DominFocuses with the URN are identified and the feedback items
-   which have the matching DomainFocus are being searched. This corresponds
-   to a SQL join if the database schema is crafted carefully.
+    Then, all DominFocuses with the URN are identified and the feedback items
+    which have the matching DomainFocus are being searched. This corresponds
+    to a SQL join if the database schema is crafted carefully.
 
-   To the user, the containing feedback groups may be of most interest as they
-   group the feedback to the units in which it is intended to be understood.
-* Constraints
-  This section discusses constraints that (may) make sense within
-  GeoViQua, but are not enforced at the conceptual model or XSD level.
-** FB Group may not span datasets
-   The primary foci of all items in a group may only target one
-   dataset.  This seems sensible in general, but may need to be
-   relaxed for certain use cases.
-** Not more than one comment in a group
-   This is a bit dependent on how large a feedback group makes sense. If we
-   allow to extend feedback groups, e.g. to allow a group of people to submit
-   feedback together, then this restriction is probably pointless.
-** Require domain focus
-   We could require one ore more domain foci to be added to each
-   feedback item. With user accounts and sensible defaults this might lead
-   to better qualified feedback.
+    To the user, the containing feedback groups may be of most interest as they
+    group the feedback to the units in which it is intended to be understood.
+** Constraints
+   This section discusses constraints that (may) make sense within
+   GeoViQua, but are not enforced at the conceptual model or XSD level.
+*** FB Group may not span datasets
+    The primary foci of all items in a group may only target one
+    dataset.  This seems sensible in general, but may need to be
+    relaxed for certain use cases.
+*** Not more than one comment in a group
+    This is a bit dependent on how large a feedback group makes sense. If we
+    allow to extend feedback groups, e.g. to allow a group of people to submit
+    feedback together, then this restriction is probably pointless.
+*** Require domain focus
+    We could require one ore more domain foci to be added to each
+    feedback item. With user accounts and sensible defaults this might lead
+    to better qualified feedback.
 * Diverse Issues
 ** Identifiers - uniqueness and canonicalization
    The target is not really intended to be defined within the
