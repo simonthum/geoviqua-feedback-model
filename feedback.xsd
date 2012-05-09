@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft" xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft">
+<xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" 
+		xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:md="http://www.isotc211.org/2005/gmd"
+		xmlns:gvq_fb="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
+		xmlns:gvq="http://www.geoviqua.org/schemas/ProducerModel_v2"
+	>
 	<xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
-	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="19139_2005/gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="schemas/ISOSchemas_20090316/gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.geoviqua.org/schemas/ProducerModel_v2" schemaLocation="schemas/GeoViQua/GeoViQua_DataQuality.xsd"/>
 	<xs:import namespace=""/>
 	<xs:import namespace=""/>
 	<xs:import namespace=""/>
