@@ -2,10 +2,6 @@
 feedback_export.log
 
 # GeoViQua schemas
-GeoViQuaXSDs
-
-19139_2005/
-19157_LB/
-GeoViQua/
-GeoViQua_Metadata.xsd
+example_documents/
+schemas/
 
