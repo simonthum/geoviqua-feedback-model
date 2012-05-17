@@ -36,7 +36,9 @@ Mime type the resource should answer in. Also, it could inform the user whether 
 		<xs:annotation>
 			<xs:documentation>The feedback focus is intended to qualify a "narrow" discussion context similar to a discussion thread. The "narrow" context is always within exactly one "hard" context/target.
 
-The focus may refer to some aspect that actually exists (a radio band, a sensor, a geolocation) prior to the feedback focus, or something purely subjective, like a title of a discussion thread. The user may create (some types of) feedback focuses.</xs:documentation>
+The focus may refer to some aspect that actually exists (a radio band, a sensor, a geolocation) prior to the feedback focus, or something purely subjective, like a title of a discussion thread. The user may create (some types of) feedback focuses.
+
+As an item may have several foci, a focus should be mostly singular so the multiplicity shows in the items themselves.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="GVQ_FeedbackTarget" type="GVQ_FeedbackTarget" minOccurs="1" maxOccurs="1"/>
@@ -213,14 +215,18 @@ Also see GVQ_DomainFocus</xs:documentation>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="GVQ_FeedbackReply">
+	<xs:complexType name="GVQ_FeedbackFocus">
 		<xs:annotation>
 			<xs:documentation>The FeedbackFocus specifies which other Feedback is the focus of the feedback given.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="GVQ_FeedbackFocusType">
 				<xs:sequence>
-					<xs:element ref="md:MD_Identifier" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="itemRef" type="md:MD_Identifier_PropertyType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation>The feedback item, in this case probably linked in via xlink.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
