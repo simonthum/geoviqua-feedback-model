@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	GeoViQua Feedback model / Consumer quality model
+	
+	2012 Simon Thum / Fraunhofer IGD (editor)
+
+	Released to the public domain as described by CC zero.
+	
+	To the extent possible under law, Fraunhofer IGD has waived 
+	all copyright and related or neighboring rights to the GeoViQua Feedback model.
+	This work is published from: Germany. 
+-->
 <xs:schema targetNamespace="http://www.geoviqua.org/schemas/FeedbackModel/Draft" 
 		xmlns="http://www.geoviqua.org/schemas/FeedbackModel/Draft"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
