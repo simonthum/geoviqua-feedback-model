@@ -70,24 +70,31 @@ the three possible roles primary, secondary and supplementary.
 
    In the following, the different types of focus are discussed.
 
-*** Data-centric focus
-    The data-centric focus qualifies the feedback within a data set.
-    If it only refers to a target data set, i.e. without specifying
-    layer or area constraints, then this is the canonical way to refer
-    to the data set as a whole.
+*** Data focus
+    The data focus qualifies the feedback within a data set.  If it
+    only refers to a target data set, i.e. without specifying layer or
+    area constraints, then this is the canonical way to refer to the
+    data set as a whole.
 
     If some of the elements are specified, then this is to be
     interpreted as to refer to the intersection of all the
     constraints.
-*** Thematic focus
-    A thematic foucs is used to qualify feedback that cannot be
-    qualified by other means, or is not qulified implicitly or
-    explicitly by the user. It just contains a title and can be
-    regarded as a sort of free-form qualification of input.
+*** Subject focus
+    A subject foucs is used to qualify feedback that cannot
+    sufficiently be qualified by other means, or is not qulified
+    implicitly or explicitly by the user. It just contains a title and
+    can be regarded as a sort of free-form qualification of input.
 *** Feedback focus
     The feedback focus qualifies feedback to pertain to other feedback.
     In the primary role, this states the feedback to be an answer to some
     other feedback in the system.
+*** Tag focus
+    The tag focus associates tags parts of a so-called folksonomy to
+    the feedback item. Such free-form memes are often aggregated in
+    "tag clouds", allowing a community to reach an informal
+    understanding of these tags. The precision of such features is
+    debateable, but in social networks they are often considered
+    essential.
 ** Feedback focus roles
 The primary focus ("the", i.e. exacly one) specifies the context of
 the item, and points to the data set or resource the feedback is
@@ -95,8 +102,8 @@ about. Typically, all items in a feedback group have the same
 primary focus.
 
 A secondary focus says something about the nature of the feedback
-item. For example, it may specify a certain domain of discourse in
-which statements have to be understood.
+item. For example, it may specify a certain domain of discourse or
+theme in which statements have to be understood.
 
 A supplementary focus adds additional references, for example, another
 region in another data set with similar problems. It is used to
@@ -107,12 +114,12 @@ referenced subject.
 The following table summarizes the interpretation of feedback foci and
 roles using hypothetic examples:
 
-| Type/Role      | _primary_                | _secondary_                     | _supplementary_            |
-| _Domain_       |                          | Domain feedback pertains to     | domains FB might relate to |
-| _Thematic_     | A new discussion         | Title the user specifies        |                            |
-| _Data-centric_ | Area an issue is located | Area used as a reference        | related dataset parts      |
-| _Feedback_     | A direct reply           | other feedback being replied to | referenced feedback        |
-| _Tag_          |                          | user-supplied tags              | autom. discovered tags     |
+| Type/Role  | _primary_                | _secondary_                     | _supplementary_             |
+| _Theme_    |                          | Theme feedback pertains to      | Themes FB might be relevant |
+| _Subject_  | A new discussion         | Title the user specifies        |                             |
+| _Data_     | Area an issue is located | Area used as a reference        | related dataset parts       |
+| _Feedback_ | A direct reply           | other feedback being replied to | referenced feedback         |
+| _Tag_      |                          | user-supplied tags              | autom. discovered tags      |
 #+CAPTION: [Feedback type and roles]{Examples of interpreting the feedback types in different roles.}
 
 * Application
