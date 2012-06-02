@@ -20,107 +20,85 @@
    not intended to be seen as metadata or directly related to it. The
    ISO elements are included to ease interoperability in cases where a
    producer decides to include user-suggested data into the official
-   metadata he maintains.
+   metadata he maintains, or other cases where a common data set
+   is of advantage.
 * Contents
   The feedback model consists of an Enterprise architect UML model and
   diagram, two xml schema files, and the application guidelines (this document).
-  Likely, a JSON mapping will also be delveleoped.
+  Likely, a JSON mapping will also be developed.
 * Concepts
 ** Conceptual Model
 
 The feedback model's main classes are
- - User information
- - Feedback group
- - Feedback item
- - Feedback focus
- - Feedback Target 
+ - User Information
+ - Feedback Item
+ - Feedback Target
 
 in rough order from user to the data set in question.
 
 The user information contains self-asserted information about the user
 which may be used to (assist in) qualifying the feedback he
 produces. The model contains this class as a clear handover point to
-the implemetation's user management, and to illustrate data an
+the implementation's user management, and to illustrate data an
 implementation should know about its users.
 
-A feedback group is a group of feedback items that "belong together",
-i.e. a star rating and a comment which gives background
-information. Whenever feedback is created, a feedback group is
-created or extended.
+The feedback item is an instance of user feedback, for example,
+a comment on a data set backed by a report. Each item is associated
+to one or more targets, which define the context of the discussion
+in the item. Further, an item can be qualified e.g. with a subject
+or an application domain in which it applies.
 
-The feedback item is an atomic instance of user feedback, for example,
-a comment. Each item is associated to one or more foci, which qualify
-the context of the item.
+The target points to a data set, resource, or something else which is
+pre-existent in the domain of discourse, and potentially also
+describes a sub-set of the resource to allow to narrow the discussion
+context as appropriate. The target as contained in the model is geared
+towards GEOSS resources.
 
-The target, associated with feedback over a focus, points to a data
-set, resource, or something else which is pre-existent in the domain
-of discourse. The target as contained in the model is geared towards
-GEOSS resources.
+** Feedback qualifiers
+   The feedback model uses qualifiers to narrow the focus of an
+   item. This intends to increase discoverability by enabling
+   to submit and discover focused feedback. Some qualifiers
+   are designed to be machine-comparable also for that reason.
 
-A focus, on the other hand, may be created by the user who creates the
-feedback item. A focus qualifies the feedback item, guided by one of
-the three possible roles primary, secondary and supplementary.
-  
-** Feedback foci
-   The feedback model relies on foci to associate feedback in a flexible
-   way. This intends to increase discoverability by enabling
-   to submit and discover focused feedback. Focuses are intended
-   to be comparable to each other, resulting in a comparison results
-   such as "identical", "overlapping" or "disjoint".
+   In the following, the different types of qualifiers are discussed.
 
-   In the following, the different types of focus are discussed.
-
-*** Data focus
-    The data focus qualifies the feedback within a data set.  If it
-    only refers to a target data set, i.e. without specifying layer or
-    area constraints, then this is the canonical way to refer to the
-    data set as a whole.
-
-    If some of the elements are specified, then this is to be
-    interpreted as to refer to the intersection of all the
-    constraints.
-*** Subject focus
-    A subject foucs is used to qualify feedback that cannot
-    sufficiently be qualified by other means, or is not qulified
-    implicitly or explicitly by the user. It just contains a title and
-    can be regarded as a sort of free-form qualification of input.
-*** Feedback focus
-    The feedback focus qualifies feedback to pertain to other feedback.
+*** Subject qualifier
+    This is just a subject. A subject is used to qualify feedback that
+    may be be sufficiently qualified by other means. It just contains
+    a title/subject text and can be regarded as a sort of free-form
+    qualification of input.
+*** TODO replace with target? (Feedback qualifier) 
+    The feedback qualifier qualifies feedback to pertain to other feedback.
     In the primary role, this states the feedback to be an answer to some
     other feedback in the system.
-*** Tag focus
-    The tag focus associates tags parts of a so-called folksonomy to
-    the feedback item. Such free-form memes are often aggregated in
+*** Tag qualifier
+    The tag qualifier associates tags parts of a so-called folksonomy
+    to the feedback item. Such free-form memes are often aggregated in
     "tag clouds", allowing a community to reach an informal
     understanding of these tags. The precision of such features is
     debateable, but in social networks they are often considered
     essential.
-** Feedback focus roles
-The primary focus ("the", i.e. exacly one) specifies the context of
-the item, and points to the data set or resource the feedback is
-about. Typically, all items in a feedback group have the same
-primary focus.
 
-A secondary focus says something about the nature of the feedback
-item. For example, it may specify a certain domain of discourse or
-theme in which statements have to be understood.
+** Feedback target roles
+   The targets of an item describe its context, guided by one of the
+   three possible roles primary, secondary and supplementary which
+   define how a target is relevant to an item. Targets are intended to
+   be comparable to each other, resulting in a comparison results such
+   as "identical", "overlapping" or "disjoint", helping to establish
+   an order of how relevant feedback is to a circumscribed issue.
 
-A supplementary focus adds additional references, for example, another
-region in another data set with similar problems. It is used to
-formally model references that somehow are related to the feedback
-item at hand, but does not imply that the feedback is relevant for the
-referenced subject.
+   *Primary targets* specify the subject of the item, i.e. point to
+   the data sets or resources the feedback is about.
 
-The following table summarizes the interpretation of feedback foci and
-roles using hypothetic examples:
+   A *secondary target* refers to referenced resources, implying that the item
+   might be releavant to the referenced resource.
 
-| Type/Role  | _primary_                | _secondary_                     | _supplementary_             |
-| _Theme_    |                          | Theme feedback pertains to      | Themes FB might be relevant |
-| _Subject_  | A new discussion         | Title the user specifies        |                             |
-| _Data_     | Area an issue is located | Area used as a reference        | related dataset parts       |
-| _Feedback_ | A direct reply           | other feedback being replied to | referenced feedback         |
-| _Tag_      |                          | user-supplied tags              | autom. discovered tags      |
-#+CAPTION: [Feedback type and roles]{Examples of interpreting the feedback types in different roles.}
+   A *supplementary target* adds additional references, for example,
+   another region in another data set with similar problems. It is
+   used to formally model references that somehow are related to the
+   feedback item at hand, but does not imply that the feedback is
+   relevant for the referenced subject. Giving an example should be
+   modeled as a supplementary target.
 
 * Application
 ** Tasks
@@ -144,24 +122,15 @@ roles using hypothetic examples:
    on this page. In the following, use cases and ther application is
    discussed.
 *** A domain-specific rating in the context of wheather forecasting
-    - One feedback group containing one item
-    - The one item is a rating
-    - The primary focus of the rating is a unqualified data-centric focus
-    - The secondary focus of the rating is a "wheather forecasting" domain focus
-    - The targets of both foci refer to the data set in question
+    - One feedback item
+    - with one primary target for the data set
+    - containing the rating (with justification if desired)
+    - the item has a "wheather forecasting" domain qualifier
 *** A rating based on a part of the data
     This works as described for a domain-specific rating, except that
-    only one focus, a data-centric focus, is needed.  It is then used
-    to describe the part of the dataset the feedback is about.  If more
-    than one "hotspot" is involved, these can be added as secondary
-    foci.
-*** Justification for a rating
-    This involves creating a feedback group with two items:
-    - One user comment (the justification)
-    - One rating
-    Both should point to the data set in question using an identical
-    primary focus. Otherwise, the description from the domain-specific
-    rating applies.
+    the target will have its extent specified.  If more than one
+    "hotspot" is involved, multiple extents can be added to the
+    target.
 *** Add report in which the data set is intercompared
 *** Add a domain-specifc comment to a data set
 *** Search for comments pertaining to a domain
@@ -177,15 +146,11 @@ roles using hypothetic examples:
 ** Constraints
    This section discusses constraints that (may) make sense within
    GeoViQua, but are not enforced at the conceptual model or XSD level.
-*** FB Group may not span datasets
-    The primary foci of all items in a group may only target one
-    dataset.  This seems sensible in general, but may need to be
-    relaxed for certain use cases.
 *** Not more than one comment in a group
     This is a bit dependent on how large a feedback group makes sense. If we
     allow to extend feedback groups, e.g. to allow a group of people to submit
     feedback together, then this restriction is probably pointless.
-*** Require domain focus
+*** Require domain qualifier
     We could require one ore more domain foci to be added to each
     feedback item. With user accounts and sensible defaults this might lead
     to better qualified feedback.
@@ -209,7 +174,10 @@ roles using hypothetic examples:
    Not every feedback target can be assumed to have an identifier,
    because GEOSS datasets are of mixed granularity. As a result,
    targets need to be able to discern concepts that are accumulated at
-   the granularity that can be identified using external identifers.
+   the granularity that can be identified using well-defined
+   identifers.  In other words, it may well by needed to specify how
+   resources known to exist can be identified in a "synthetic" manner
+   to allow feedback submission and discovery.
 
    For example, a dataset may be organized into layers which do not have
    a GEOSS identifier. To be able to target such a layer, the targets
