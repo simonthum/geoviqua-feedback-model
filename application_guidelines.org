@@ -151,7 +151,7 @@ towards GEOSS resources.
     allow to extend feedback groups, e.g. to allow a group of people to submit
     feedback together, then this restriction is probably pointless.
 *** Require domain qualifier
-    We could require one ore more domain foci to be added to each
+    We could require one or more domain foci to be added to each
     feedback item. With user accounts and sensible defaults this might lead
     to better qualified feedback.
 * Diverse Issues
@@ -175,13 +175,13 @@ towards GEOSS resources.
    because GEOSS datasets are of mixed granularity. As a result,
    targets need to be able to discern concepts that are accumulated at
    the granularity that can be identified using well-defined
-   identifers.  In other words, it may well by needed to specify how
+   identifiers.  In other words, it may well by needed to specify how
    resources known to exist can be identified in a "synthetic" manner
    to allow feedback submission and discovery.
 
    For example, a dataset may be organized into layers which do not have
    a GEOSS identifier. To be able to target such a layer, the targets
-   should be equipped with a locally (within the dataset) layer identifier
+   should be equipped with a locally unique (within the dataset) layer identifier
    (e.g. a name) and a parent target which contains the actual GEOSS
    identifier (possibly canonicalized).
 ** Default value recommendations
